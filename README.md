@@ -195,8 +195,9 @@ When you use NICT BERT base or Waseda RoBERTa base models, the dataset text shou
 Please refer to [preprocess/morphological-analysis/README.md](/preprocess/morphological-analysis/README.md).
 
 The fine-tuning was performed using [the transformers
-library](https://github.com/huggingface/transformers) provided by Hugging Face. The performance along
-with human scores on the JGLUE dev set is shown below. 
+library](https://github.com/huggingface/transformers) provided by Hugging Face. See [fine-tuning/README.md](/fine-tuning/README.md) for details.
+
+The performance along with human scores on the JGLUE dev set is shown below. 
 
 |Model|MARC-ja|JSTS|JNLI|JSQuAD|JCommonsenseQA|
 |-----|-------|-------|-------|-------|-------|
@@ -209,10 +210,10 @@ with human scores on the JGLUE dev set is shown below.
 |NICT BERT base|0.958|0.903/0.867|0.902|**0.897**/**0.947**|0.823| 
 |Waseda RoBERTa base|0.962|0.901/0.865|0.895|0.864/0.927|0.840|
 |Waseda RoBERTa large|0.954|**0.923**/**0.891**|**0.924**|0.884/0.940|**0.901**|
-|XLM RoBERTa base|0.961|0.870/0.825|0.893|-/-|0.687|
-|XLM RoBERTa large|**0.964**|0.915/0.882|0.919|-/-|0.840|
+|XLM RoBERTa base|0.961|0.870/0.825|0.893|-/-&dagger;|0.687|
+|XLM RoBERTa large|**0.964**|0.915/0.882|0.919|-/-&dagger;|0.840|
 
-
+&dagger;XLM RoBERTa base/large models use the unigram language model as a tokenizer and they are excluded from the JSQuAD evaluation because the token delimitation and the start/end of the answer span often do not match, resulting in poor performance.
 
 ## Leaderboard
 
