@@ -1,6 +1,7 @@
 # Morphological Analysis
 
-Run the following command.
+Run the following command:
+
 (Please replace `/somewhere/jumandic` with your installed MeCab dictionary directory in the following command.)
 ```bash
 $ cd preprocess/morphological-analysis/scripts
