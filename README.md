@@ -9,7 +9,7 @@ JGLUE has been constructed by a joint research project of Yahoo Japan Corporatio
 ## Tasks/Datasets
 
 JGLUE consists of the tasks of text classification, sentence pair classification, and QA. Each task consists of
-multiple datasets. Each dataset can be found under the `datasets` directory. Only train/dev sets are available now, and the test set will be available after the leaderboard is made public.
+multiple datasets. Each dataset can be found under the `datasets` directory. Only train/dev sets are available now, and the test set will be available after the leaderboard is made public. We use Yahoo! Crowdsourcing for all crowdsourcing tasks in constructing the datasets.
 
 |Task|Dataset|Train|Dev|Test|
 |----|-------|----:|--:|---:|
