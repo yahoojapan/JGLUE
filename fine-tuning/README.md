@@ -109,7 +109,7 @@ $ python /somewhere/transformers-4.9.2/examples/legacy/question-answering/run_sq
      --per_gpu_eval_batch_size 32 \
      --output_dir $OUTPUT_DIR \
      --train_file ../datasets/jsquad-v1.0/train-v1.0.json \
-     --predict_file ../datasets/jsquad-v1.0/valid-v1.0.json \     
+     --predict_file ../datasets/jsquad-v1.0/valid-v1.0.json \
      --save_steps 5000 \
      --warmup_ratio 0.1 \
      --evaluate_prefix eval
