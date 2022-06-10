@@ -1,6 +1,6 @@
 # Fine-tuning
 
-We used [the transformers library](https://github.com/huggingface/transformers) for our fine-tuning experiments, and modified the original codes to fit our datasets and experimental settings. We used v4.9.2, but other versions may work.
+We used [the transformers library](https://github.com/huggingface/transformers) for our fine-tuning experiments, and modified the original codes to fit our datasets and experimental settings. We used v4.9.2, but other versions may work (we have confirmed that v4.19.2, the latest version as of June 2022, worked).
 
 ```bash
 # This directory is for installing transformers. This directory would be better outside the JGLUE repository.)
