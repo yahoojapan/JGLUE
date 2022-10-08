@@ -187,6 +187,7 @@ The following foundation models are used for the evaluation.
 |[XLM RoBERTa base](https://huggingface.co/xlm-roberta-base)|subword<br>(Unigram LM)|multi-lingual CC| 
 
 Note that the large-sized models are also used corresponding to Tohoku BERT base, Waseda RoBERTa base and XLM RoBERTa base.
+For Waseda RoBERTa large, the following two versions with different maximum sequence lengths are used: [Waseda RoBERTa large (s128)](https://huggingface.co/nlp-waseda/roberta-large-japanese) and [Waseda RoBERTa large (s512)](https://huggingface.co/nlp-waseda/roberta-large-japanese-seq512).
 
 When you use NICT BERT base or Waseda RoBERTa base models, the dataset text should be segmented into words by the following corresponding morphological analyzer in advance:
 - NICT BERT base: [MeCab](https://taku910.github.io/mecab/) (0.996) with JUMAN dictionary
@@ -207,9 +208,10 @@ The performance along with human scores on the JGLUE dev set is shown below.
 |Tohoku BERT base|0.958|0.899/0.859|0.899|0.871/0.941|0.808|  
 |Tohoku BERT base (char)|0.956|0.882/0.841|0.892|0.864/0.937|0.718| 
 |Tohoku BERT large|0.955|0.908/0.870|0.900|0.880/0.946|0.816| 
-|NICT BERT base|0.958|0.903/0.867|0.902|**0.897**/**0.947**|0.823| 
+|NICT BERT base|0.958|0.903/0.867|0.902|0.897/0.947|0.823|
 |Waseda RoBERTa base|0.962|0.901/0.865|0.895|0.864/0.927|0.840|
-|Waseda RoBERTa large|0.954|**0.923**/**0.891**|**0.924**|0.884/0.940|**0.901**|
+|Waseda RoBERTa large (s128)|0.954|0.923/0.891|0.924|0.884/0.940|**0.907**|
+|Waseda RoBERTa large (s512)|0.961|**0.924**/**0.893**|**0.926**|**0.918**/**0.963**|0.891|
 |XLM RoBERTa base|0.961|0.870/0.825|0.893|-/-&dagger;|0.687|
 |XLM RoBERTa large|**0.964**|0.915/0.882|0.919|-/-&dagger;|0.840|
 
