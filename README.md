@@ -64,7 +64,7 @@ Dataset](https://github.com/yahoojapan/YJCaptions) (Miyazaki and Shimizu, 2016).
  "yjcaptions_id": "127202-129817-129818",
  "sentence1": "街中の道路を大きなバスが走っています。 (A big bus is running on the road in the city.)", 
  "sentence2": "道路を大きなバスが走っています。 (There is a big bus running on the road.)", 
- "label": "4.4"}
+ "label": 4.4}
 ```
 (Note that English translations are added in this example for those who do not understand Japanese, and are not included in the dataset.)
 
