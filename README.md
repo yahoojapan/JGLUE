@@ -205,15 +205,15 @@ The performance along with human scores on the JGLUE dev set is shown below.
 ||acc|Pearson/Spearman|acc|EM/F1|acc| 
 |Human|0.989|0.899/0.861|0.925|0.871/0.944|0.986|
 |||
-|Tohoku BERT base|0.958|0.899/0.859|0.899|0.871/0.941|0.808|  
-|Tohoku BERT base (char)|0.956|0.882/0.841|0.892|0.864/0.937|0.718| 
-|Tohoku BERT large|0.955|0.908/0.870|0.900|0.880/0.946|0.816| 
-|NICT BERT base|0.958|0.903/0.867|0.902|0.897/0.947|0.823|
-|Waseda RoBERTa base|0.962|0.901/0.865|0.895|0.864/0.927|0.840|
-|Waseda RoBERTa large (s128)|0.954|0.923/0.891|0.924|0.884/0.940|**0.907**|
-|Waseda RoBERTa large (s512)|0.961|**0.924**/**0.893**|**0.926**|**0.918**/**0.963**|0.891|
-|XLM RoBERTa base|0.961|0.870/0.825|0.893|-/-&dagger;|0.687|
-|XLM RoBERTa large|**0.964**|0.915/0.882|0.919|-/-&dagger;|0.840|
+|Tohoku BERT base|0.958|0.909/0.868|0.899|0.871/0.941|0.808|  
+|Tohoku BERT base (char)|0.956|0.893/0.851|0.892|0.864/0.937|0.718| 
+|Tohoku BERT large|0.955|0.913/0.872|0.900|0.880/0.946|0.816| 
+|NICT BERT base|0.958|0.910/0.871|0.902|0.897/0.947|0.823|
+|Waseda RoBERTa base|0.962|0.913/0.873|0.895|0.864/0.927|0.840|
+|Waseda RoBERTa large (s128)|0.954|**0.930**/**0.896**|0.924|0.884/0.940|**0.907**|
+|Waseda RoBERTa large (s512)|0.961|0.926/0.892|**0.926**|**0.918**/**0.963**|0.891|
+|XLM RoBERTa base|0.961|0.877/0.831|0.893|-/-&dagger;|0.687|
+|XLM RoBERTa large|**0.964**|0.918/0.884|0.919|-/-&dagger;|0.840|
 
 &dagger;XLM RoBERTa base/large models use the unigram language model as a tokenizer and they are excluded from the JSQuAD evaluation because the token delimitation and the start/end of the answer span often do not match, resulting in poor performance.
 
