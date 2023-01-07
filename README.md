@@ -224,15 +224,19 @@ A leaderboard will be made public soon. The test set will be released at that ti
 ## Reference
 
 ```
-@InProceedings{Kurihara_lrec2022,
-  title = "JGLUE: Japanese General Language Understanding Evaluation",
-  author = "Kentaro Kurihara and 
-      Daisuke Kawahara and
-      Tomohide Shibata",
-  booktitle = "Proceedings of the 13th Language Resources and Evaluation Conference",
-  year = "2022",
-  publisher = "European Language Resources Association (ELRA)",
-  note = "to appear"
+@inproceedings{kurihara-etal-2022-jglue,
+    title = "{JGLUE}: {J}apanese General Language Understanding Evaluation",
+    author = "Kurihara, Kentaro  and
+      Kawahara, Daisuke  and
+      Shibata, Tomohide",
+    booktitle = "Proceedings of the Thirteenth Language Resources and Evaluation Conference",
+    month = jun,
+    year = "2022",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2022.lrec-1.317",
+    pages = "2957--2966",
+    abstract = "To develop high-performance natural language understanding (NLU) models, it is necessary to have a benchmark to evaluate and analyze NLU ability from various perspectives. While the English NLU benchmark, GLUE, has been the forerunner, benchmarks are now being released for languages other than English, such as CLUE for Chinese and FLUE for French; but there is no such benchmark for Japanese. We build a Japanese NLU benchmark, JGLUE, from scratch without translation to measure the general NLU ability in Japanese. We hope that JGLUE will facilitate NLU research in Japanese.",
 }
 
 @InProceedings{Kurihara_nlp2022,
