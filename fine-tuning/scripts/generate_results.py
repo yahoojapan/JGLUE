@@ -75,7 +75,7 @@ def main(args):
                                                 args.additional_column_name_string)
                 eval_string = get_eval_string(input_data, system_predict,
                                               args.classification_type, args.task_type)
-                # input  system  goal evaluation
+                # input  system  gold  evaluation
                 print("{}\t{}\t{}\t{}".format(input_string,
                                               system_predict,
                                               input_data["label"],
