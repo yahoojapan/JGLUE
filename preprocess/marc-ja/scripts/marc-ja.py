@@ -69,14 +69,14 @@ def output_data(instances, args):
 
     instance_num = len(instances)
 
-    splitted_instances = {}
+    split_instances = {}
 
     length1 = int(instance_num * args.split_ratio[0])
-    splitted_instances["train"] = instances[:length1]
+    split_instances["train"] = instances[:length1]
 
     length2 = int(instance_num * (args.split_ratio[0] + args.split_ratio[1]))
-    splitted_instances["valid"] = instances[length1:length2]
-    splitted_instances["test"] = instances[length2:]
+    split_instances["valid"] = instances[length1:length2]
+    split_instances["test"] = instances[length2:]
 
     filter_review_id_list = get_filter_review_id_list(args)
     label_conv_review_id_list = get_label_conv_review_id_list(args)
@@ -87,7 +87,7 @@ def output_data(instances, args):
 
         out_file = os.path.join(args.output_dir, "{}-v{}.json".format(eval_type, args.version))
         with open(out_file, mode="w") as f:
-            for instance in splitted_instances[eval_type]:
+            for instance in split_instances[eval_type]:
                 # filter
                 if len(filter_review_id_list) != 0:
                     filter_flag = False
