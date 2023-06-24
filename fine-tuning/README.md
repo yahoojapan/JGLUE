@@ -143,3 +143,6 @@ $ python scripts/generate_results.py \
      --task-type swag \
      --additional-column-name-string q_id > $OUTPUT_DIR/predict_eval_results.tsv
 ```
+
+## Links
+- [JGLUE-evaluation-scripts](https://github.com/nobu-g/JGLUE-evaluation-scripts): this script can be used for all the fine-tuning experiments
