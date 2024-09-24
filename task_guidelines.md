@@ -1,4 +1,4 @@
-# Guidelines
+# Task Guidelines
 
 The followings are the task guidelines and user inteface screenshots used for constructing data through crowdsourcing.
 (The guidelines are writtern in Japanese.)
