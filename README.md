@@ -24,6 +24,8 @@ multiple datasets. Each dataset can be found under the `datasets` directory. Onl
 
 ## Dataset Description
 
+(The task guidelines and user inteface screenshots used for constructing data are presented in [task_guidelines.md](./task_guidelines.md).)
+
 ### MARC-ja
 
 MARC-ja is a dataset of the text classification task. This dataset is based on the Japanese portion of [Multilingual Amazon Reviews Corpus (MARC)](https://docs.opendata.aws/amazon-reviews-ml/readme.html) (Keung+, 2020). 
@@ -172,7 +174,6 @@ JCommonsenseQA is a Japanese version of [CommonsenseQA](https://www.tau-nlp.org/
 |question|question|
 |choice{0..4}|choice|
 |label|correct choice id|
-
 
 ## Baseline Scores
 
