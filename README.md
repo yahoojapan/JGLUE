@@ -224,6 +224,18 @@ A leaderboard will be made public soon. The test set will be released at that ti
 ## Reference
 
 ```
+@article{栗原 健太郎2023,
+  title={JGLUE: 日本語言語理解ベンチマーク},
+  author={栗原 健太郎 and 河原 大輔 and 柴田 知秀},
+  journal={自然言語処理},
+  volume={30},
+  number={1},
+  pages={63-87},
+  year={2023},
+  url = "https://www.jstage.jst.go.jp/article/jnlp/30/1/30_63/_article/-char/ja",
+  doi={10.5715/jnlp.30.63}
+}
+
 @inproceedings{kurihara-etal-2022-jglue,
     title = "{JGLUE}: {J}apanese General Language Understanding Evaluation",
     author = "Kurihara, Kentaro  and
