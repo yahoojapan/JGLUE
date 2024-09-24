@@ -91,7 +91,7 @@ The followings are the task guidelines and user inteface screenshots used for co
 
 <img width="811" alt="image" src="https://github.com/user-attachments/assets/e6ee397f-b013-44cb-982d-06ba3d966179">
 
-## JNLI: inference relation judgement
+## JNLI: 1. inference relation judgement
 
 ### Task guideline
 
@@ -155,7 +155,7 @@ B：ベンチには女性だけが座っている。
 
 <img width="805" alt="image" src="https://github.com/user-attachments/assets/049be4ad-b539-4974-b427-c8fca52e7a82">
 
-## JNLI: contradictory sentences writing
+## JNLI: 2. contradictory sentences writing
 
 ### Task guideline
 
@@ -233,7 +233,7 @@ B：ベンチには女性だけが座っている。
 
 <img width="811" alt="image" src="https://github.com/user-attachments/assets/d17c99db-1ec7-4bc3-ab2e-6e9a921ada8f">
 
-## JCommonsenseQA: question sentence writing
+## JCommonsenseQA: 1. question sentence writing
 
 ### Task guideline
 
@@ -293,7 +293,7 @@ B：ベンチには女性だけが座っている。
 
 <img width="808" alt="image" src="https://github.com/user-attachments/assets/9d5151db-5b41-4683-bc85-4129557ce949">
 
-## JCommonsenseQA: distractors addition
+## JCommonsenseQA: 2. distractors addition
 
 ### Task guideline
 
@@ -360,7 +360,7 @@ B：ベンチには女性だけが座っている。
 
 <img width="810" alt="image" src="https://github.com/user-attachments/assets/f7d273f7-9b67-4363-b934-67838b21633d">
 
-## JCommonsenseQA: answer selection
+## JCommonsenseQA: 3. answer selection
 
 ### Task guideline
 
