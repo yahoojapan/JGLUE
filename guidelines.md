@@ -154,7 +154,7 @@ B：ベンチには女性だけが座っている。
 
 <img width="805" alt="image" src="https://github.com/user-attachments/assets/049be4ad-b539-4974-b427-c8fca52e7a82">
 
-### JNLI: contradictory sentences writing
+## JNLI: contradictory sentences writing
 
 ### Task guideline
 
