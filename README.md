@@ -35,11 +35,14 @@ We performed the following modifications to the original dataset:
 1. To make it easy for both humans and computers to judge a class label, we cast the text classification task as a binary classification task, where 1 and 2-star ratings are converted to `negative`, and 4 and 5 are converted to `positive`. We do not use reviews with a 3-star rating.
 2. There are some instances where the rating diverges from a review text. To improve the quality of the dev/test instances, we crowdsource a positive/negative judgment task, adopt only the reviews with the same votes from seven or more out of 10 workers and assign a label of the maximum votes to these reviews.
 
-We don't distribute the dataset itself. Please download the original dataset, and run a conversion script as follows:
+**Amazon has decided to stop distributing MARC** (see https://huggingface.co/datasets/defunct-datasets/amazon_reviews_multi/discussions/4#64c3898db63057f1fd3ce1a0)**, and so MARC-ja is no longer available in JGLUE.**
 
-1. Download https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_multilingual_JP_v1_00.tsv.gz
-2. Run the following commands:
-```bash
+~~We don't distribute the dataset itself. Please download the original dataset, and run a conversion script as follows:~~
+
+~~1. Download https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_multilingual_JP_v1_00.tsv.gz~~
+
+~~2. Run the following commands:~~
+```bash~~
 $ pip install -r preprocess/requirements.txt
 $ cd preprocess/marc-ja/scripts
 $ gzip -dc /somewhere/amazon_reviews_multilingual_JP_v1_00.tsv.gz | \
@@ -50,10 +53,10 @@ $ gzip -dc /somewhere/amazon_reviews_multilingual_JP_v1_00.tsv.gz | \
          --filter-review-id-list-valid ../data/filter_review_id_list/valid.txt \
          --label-conv-review-id-list-valid ../data/label_conv_review_id_list/valid.txt
 ```
-The train and valid sets will be generated under the `datasets/marc_ja-v1.1` directory.
+~~The train and valid sets will be generated under the `datasets/marc_ja-v1.1` directory.~~
 
 
-When you use this dataset, please follow the license of [Multilingual Amazon Reviews Corpus (MARC)](https://docs.opendata.aws/amazon-reviews-ml/readme.html).
+~~When you use this dataset, please follow the license of [Multilingual Amazon Reviews Corpus (MARC)](https://docs.opendata.aws/amazon-reviews-ml/readme.html).~~
 
 ### JSTS
 
