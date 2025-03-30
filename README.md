@@ -14,13 +14,13 @@ multiple datasets. Each dataset can be found under the `datasets` directory. Onl
 |Task|Dataset|Train|Dev|Test|
 |----|-------|----:|--:|---:|
 |Text Classification|MARC-ja|187,528|5,654|5,639|
-||JCoLA&dagger;|-|-|-|
+||JCoLA&dagger;|6,919(in-domain)|865(in-domain),<br>685 (out-of-domain)|865 (in-domain),<br>686 (out-of-domain)|
 |Sentence Pair Classification|JSTS|12,451|1,457|1,589|
 ||JNLI|20,073|2,434|2,508|
 |QA|JSQuAD|62,859|4,442|4,420|
 ||JCommonsenseQA|8,939|1,119|1,118|
 
-&dagger;JCoLA will be added soon.
+&dagger;The JCoLA dataset (Someya+, 2014) is available at https://github.com/osekilab/JCoLA.
 
 ## Dataset Description
 
