@@ -9,7 +9,7 @@ JGLUE has been constructed by a joint research project of Yahoo Japan Corporatio
 ## Tasks/Datasets
 
 JGLUE consists of the tasks of text classification, sentence pair classification, and QA. Each task consists of
-multiple datasets. Each dataset can be found under the `datasets` directory. Only train/dev sets are available now, and the test set will be available after the leaderboard is made public. We use Yahoo! Crowdsourcing for all crowdsourcing tasks in constructing the datasets.
+multiple datasets. Each dataset can be found under the `datasets` directory. We use Yahoo! Crowdsourcing for all crowdsourcing tasks in constructing the datasets.
 
 |Task|Dataset|Train|Dev|Test|
 |----|-------|----:|--:|---:|
@@ -221,9 +221,24 @@ The performance along with human scores on the JGLUE dev set is shown below.
 
 &dagger;XLM RoBERTa base/large models use the unigram language model as a tokenizer and they are excluded from the JSQuAD evaluation because the token delimitation and the start/end of the answer span often do not match, resulting in poor performance.
 
+The performance along on the JGLUE test set is shown below. 
+
+|Model|MARC-ja|JSTS|JNLI|JSQuAD|JCommonsenseQA|
+|-----|-------|-------|-------|-------|-------|
+||acc|Pearson/Spearman|acc|EM/F1|acc| 
+|Tohoku BERT base|0.957|0.907/0.865|0.876|0.879/0.946|0.782|  
+|Tohoku BERT base (char)|0.960|0.901/0.857|0.861|0.864/0.937|0.728| 
+|Tohoku BERT large|0.961|0.910/0.866|0.878|0.887/0.951|0.822| 
+|NICT BERT base|0.962|0.911/0.868|0.881|0.904/0.952|0.807|
+|Waseda RoBERTa base|0.962|0.910/0.867|0.876|0.868/0.926|0.849|
+|Waseda RoBERTa large (s128)|0.954|**0.925**/**0.888**|**0.904**|0.881/0.940|**0.901**|
+|Waseda RoBERTa large (s512)|0.963|0.920/0.882|0.902|**0.925**/**0.965**|0.873|
+|XLM RoBERTa base|0.962|0.887/0.836|0.872|-/-&dagger;|0.708|
+|XLM RoBERTa large|**0.965**|0.916/0.880|0.896|-/-&dagger;|0.842|
+
 ## Leaderboard
 
-A leaderboard will be made public soon. The test set will be released at that time.
+~~A leaderboard will be made public soon. The test set will be released at that time.~~ The test set has been released (without a leaderboard).
 
 ## Reference
 
