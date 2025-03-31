@@ -224,7 +224,7 @@
 {"sentence_pair_id": "223", "yjcaptions_id": "15203-16789-16788", "sentence1": "こげ茶色のトレーに丸いピザが乗っています。", "sentence2": "トレーの上に、サラミがトッピングされたピザが乗っています。", "label": "neutral"}
 {"sentence_pair_id": "224", "yjcaptions_id": "152273-23508-23506", "sentence1": "丸テーブルの上に携帯電話が４個あります。", "sentence2": "机上に携帯電話が四つ置かれています。", "label": "entailment"}
 {"sentence_pair_id": "225", "yjcaptions_id": "153052-24263-24264", "sentence1": "スタジアムにいる野球選手達と大勢の観客達。", "sentence2": "野球場の客席には沢山の人が座っており、グラウンドには６人の野球選手と１人の審判が立っています。", "label": "neutral"}
-{"sentence_pair_id": "226", "yjcaptions_id": "153052-24264-24263", "sentence1": "野球場の客席には沢山の人が座っており、グラウンドには６人の野球選手と１人の審判が立っています。", "sentence2": "スタジアムにいる野球選手達と大勢の観客達。", "label": "neutral"}
+{"sentence_pair_id": "226", "yjcaptions_id": "153052-24264-24263", "sentence1": "野球場の客席には沢山の人が座っており、グラウンドには６人の野球選手と１人の審判が立っています。", "sentence2": "スタジアムにいる野球選手達と大勢の観客達。", "label": "entailment"}
 {"sentence_pair_id": "227", "yjcaptions_id": "1536-1731-1730", "sentence1": "鉄板の上に、ピザが1枚焼かれています。", "sentence2": "ピザが一枚乗っているトレイを傾けています。", "label": "neutral"}
 {"sentence_pair_id": "228", "yjcaptions_id": "153730-24903-24901", "sentence1": "レーサーの乗ったバイクから煙が噴き出しています。", "sentence2": "煙がでている単車とそれにまたがるライダーです。", "label": "entailment"}
 {"sentence_pair_id": "229", "yjcaptions_id": "154060-25262-25263", "sentence1": "草地の消火栓の奥にレンガ造りの建物が見えます。", "sentence2": "建物の前に赤い消火栓が設置されています。", "label": "neutral"}
@@ -261,7 +261,7 @@
 {"sentence_pair_id": "260", "yjcaptions_id": "165053-37671-37667", "sentence1": "サバンナでキリンが首を伸ばして立っています。", "sentence2": "草原の木の陰に一頭のキリンが立っています。", "label": "neutral"}
 {"sentence_pair_id": "261", "yjcaptions_id": "16544-18257-18259", "sentence1": "庭の片隅に人形が置いてあります。", "sentence2": "にんじんを持ったおじさんの像が置かれています。", "label": "neutral"}
 {"sentence_pair_id": "262", "yjcaptions_id": "16544-18259-18257", "sentence1": "にんじんを持ったおじさんの像が置かれています。", "sentence2": "庭の片隅に人形が置いてあります。", "label": "neutral"}
-{"sentence_pair_id": "263", "yjcaptions_id": "166127-38903-38905", "sentence1": "象が一頭、草原をゆったりと歩いています。", "sentence2": "アフリカゾウが食事をしています。", "label": "neutral"}
+{"sentence_pair_id": "263", "yjcaptions_id": "166127-38903-38905", "sentence1": "象が一頭、草原をゆったりと歩いています。", "sentence2": "アフリカゾウが食事をしています。", "label": "contradiction"}
 {"sentence_pair_id": "264", "yjcaptions_id": "166650-39512-39514", "sentence1": "夜に道路わきで女性が携帯をかけています。", "sentence2": "暗い中、若い女性が電話で話している。", "label": "neutral"}
 {"sentence_pair_id": "265", "yjcaptions_id": "166650-39514-39512", "sentence1": "暗い中、若い女性が電話で話している。", "sentence2": "夜に道路わきで女性が携帯をかけています。", "label": "neutral"}
 {"sentence_pair_id": "266", "yjcaptions_id": "167342-40303-g428", "sentence1": "公園の樹木のそばに二頭の羊がいます。", "sentence2": "公園に二頭のやぎがいる。", "label": "contradiction"}
@@ -280,7 +280,7 @@
 {"sentence_pair_id": "279", "yjcaptions_id": "168453-g5184-41590", "sentence1": "よく晴れた明け方の海岸で遊んでいる人がいます。", "sentence2": "よく晴れた夕暮れの海岸で遊んでいる人がいます。", "label": "contradiction"}
 {"sentence_pair_id": "280", "yjcaptions_id": "168730-41884-41885", "sentence1": "家具や冷蔵庫が白で統一されたキッチンです。", "sentence2": "キッチンに食器棚と冷蔵庫が設置されています。", "label": "neutral"}
 {"sentence_pair_id": "281", "yjcaptions_id": "168730-41885-41884", "sentence1": "キッチンに食器棚と冷蔵庫が設置されています。", "sentence2": "家具や冷蔵庫が白で統一されたキッチンです。", "label": "neutral"}
-{"sentence_pair_id": "282", "yjcaptions_id": "169448-42672-42674", "sentence1": "道路にトラックが列をつくっています。", "sentence2": "街中の道路にトラックが連なってあります。", "label": "entailment"}
+{"sentence_pair_id": "282", "yjcaptions_id": "169448-42672-42674", "sentence1": "道路にトラックが列をつくっています。", "sentence2": "街中の道路にトラックが連なってあります。", "label": "neutral"}
 {"sentence_pair_id": "283", "yjcaptions_id": "169448-42674-42672", "sentence1": "街中の道路にトラックが連なってあります。", "sentence2": "道路にトラックが列をつくっています。", "label": "entailment"}
 {"sentence_pair_id": "284", "yjcaptions_id": "170045-43334-g4596", "sentence1": "台所の冷蔵庫やレンジの前の調理台の傍に人がいます。", "sentence2": "台所の冷蔵庫の中に人がいます。", "label": "contradiction"}
 {"sentence_pair_id": "285", "yjcaptions_id": "170045-g4596-43334", "sentence1": "台所の冷蔵庫の中に人がいます。", "sentence2": "台所の冷蔵庫やレンジの前の調理台の傍に人がいます。", "label": "contradiction"}
@@ -340,7 +340,7 @@
 {"sentence_pair_id": "339", "yjcaptions_id": "180273-54714-54715", "sentence1": "青い傘を差した人が道を歩いています。", "sentence2": "雨が降る中、青い傘をさした人が歩いています。", "label": "neutral"}
 {"sentence_pair_id": "340", "yjcaptions_id": "180273-54715-54714", "sentence1": "雨が降る中、青い傘をさした人が歩いています。", "sentence2": "青い傘を差した人が道を歩いています。", "label": "entailment"}
 {"sentence_pair_id": "341", "yjcaptions_id": "180287-36694-36696", "sentence1": "毛の長い猫がノートパソコンの上に座っています。", "sentence2": "ノートパソコンのキーボードの上に猫が座っています。", "label": "neutral"}
-{"sentence_pair_id": "342", "yjcaptions_id": "180287-36696-36694", "sentence1": "ノートパソコンのキーボードの上に猫が座っています。", "sentence2": "毛の長い猫がノートパソコンの上に座っています。", "label": "entailment"}
+{"sentence_pair_id": "342", "yjcaptions_id": "180287-36696-36694", "sentence1": "ノートパソコンのキーボードの上に猫が座っています。", "sentence2": "毛の長い猫がノートパソコンの上に座っています。", "label": "neutral"}
 {"sentence_pair_id": "343", "yjcaptions_id": "180923-55509-55513", "sentence1": "広場にプロペラ飛行機が止まっています。", "sentence2": "草むらの上に迷彩柄の飛行機が停まっています。", "label": "neutral"}
 {"sentence_pair_id": "344", "yjcaptions_id": "180923-55513-55509", "sentence1": "草むらの上に迷彩柄の飛行機が停まっています。", "sentence2": "広場にプロペラ飛行機が止まっています。", "label": "neutral"}
 {"sentence_pair_id": "345", "yjcaptions_id": "180966-55571-g4867", "sentence1": "雪の斜面を、スキーを履いた人が滑っています。", "sentence2": "雪の斜面をスノボーに履いた人が滑っています。", "label": "contradiction"}
@@ -387,7 +387,7 @@
 {"sentence_pair_id": "386", "yjcaptions_id": "189394-g2995-65101", "sentence1": "海辺を鳥が走っている。", "sentence2": "海辺の砂浜を一羽の鳥が歩いています。", "label": "contradiction"}
 {"sentence_pair_id": "387", "yjcaptions_id": "190537-66197-66199", "sentence1": "箱の中に具がのったピザが入っている。", "sentence2": "一枚のピザが入った箱のふたが開いています。", "label": "neutral"}
 {"sentence_pair_id": "388", "yjcaptions_id": "190537-66197-66201", "sentence1": "箱の中に具がのったピザが入っている。", "sentence2": "箱の中に丸いピザが一枚入っています。", "label": "neutral"}
-{"sentence_pair_id": "389", "yjcaptions_id": "190537-66199-66197", "sentence1": "一枚のピザが入った箱のふたが開いています。", "sentence2": "箱の中に具がのったピザが入っている。", "label": "entailment"}
+{"sentence_pair_id": "389", "yjcaptions_id": "190537-66199-66197", "sentence1": "一枚のピザが入った箱のふたが開いています。", "sentence2": "箱の中に具がのったピザが入っている。", "label": "neutral"}
 {"sentence_pair_id": "390", "yjcaptions_id": "190537-66201-66197", "sentence1": "箱の中に丸いピザが一枚入っています。", "sentence2": "箱の中に具がのったピザが入っている。", "label": "neutral"}
 {"sentence_pair_id": "391", "yjcaptions_id": "190573-66244-66246", "sentence1": "青空に凧のような物が浮かんでいる。", "sentence2": "晴れた日の海辺で、凧が揚がっています。", "label": "neutral"}
 {"sentence_pair_id": "392", "yjcaptions_id": "190573-66246-66244", "sentence1": "晴れた日の海辺で、凧が揚がっています。", "sentence2": "青空に凧のような物が浮かんでいる。", "label": "neutral"}
@@ -396,7 +396,7 @@
 {"sentence_pair_id": "395", "yjcaptions_id": "192114-108234-108236", "sentence1": "青いバスの近くには、多数のバイクが停められています。", "sentence2": "バスやバイクなどが停まっている木立の中の広場に人々がいます。", "label": "neutral"}
 {"sentence_pair_id": "396", "yjcaptions_id": "192114-108236-108234", "sentence1": "バスやバイクなどが停まっている木立の中の広場に人々がいます。", "sentence2": "青いバスの近くには、多数のバイクが停められています。", "label": "neutral"}
 {"sentence_pair_id": "397", "yjcaptions_id": "193110-113656-113657", "sentence1": "紫色の防寒具を着た子供がスノーボードをしています。", "sentence2": "スノーボードをしている子供がいます。", "label": "entailment"}
-{"sentence_pair_id": "398", "yjcaptions_id": "193110-113657-113656", "sentence1": "スノーボードをしている子供がいます。", "sentence2": "紫色の防寒具を着た子供がスノーボードをしています。", "label": "entailment"}
+{"sentence_pair_id": "398", "yjcaptions_id": "193110-113657-113656", "sentence1": "スノーボードをしている子供がいます。", "sentence2": "紫色の防寒具を着た子供がスノーボードをしています。", "label": "neutral"}
 {"sentence_pair_id": "399", "yjcaptions_id": "193254-68741-68743", "sentence1": "テーブルの上にあるケーキのような物をネコが食べています。", "sentence2": "黒猫が皿の上のケーキのような物を食べています。", "label": "neutral"}
 {"sentence_pair_id": "400", "yjcaptions_id": "193677-69199-69200", "sentence1": "芝生の上で、小さな男の子がサッカーボールを扱っています。", "sentence2": "サッカーの練習をしている少年がいます。", "label": "neutral"}
 {"sentence_pair_id": "401", "yjcaptions_id": "193677-69200-69199", "sentence1": "サッカーの練習をしている少年がいます。", "sentence2": "芝生の上で、小さな男の子がサッカーボールを扱っています。", "label": "neutral"}
@@ -413,8 +413,8 @@
 {"sentence_pair_id": "412", "yjcaptions_id": "197118-72660-72661", "sentence1": "二頭の茶色い馬が体を交差させています。", "sentence2": "芝生の上で２頭の馬がクロスして立っている。", "label": "neutral"}
 {"sentence_pair_id": "413", "yjcaptions_id": "197118-72661-72660", "sentence1": "芝生の上で２頭の馬がクロスして立っている。", "sentence2": "二頭の茶色い馬が体を交差させています。", "label": "neutral"}
 {"sentence_pair_id": "414", "yjcaptions_id": "19719-21827-21829", "sentence1": "二頭のシマウマたちが佇んでいます。", "sentence2": "２頭のシマウマが横に並んで立っています。", "label": "neutral"}
-{"sentence_pair_id": "415", "yjcaptions_id": "19719-21829-21827", "sentence1": "２頭のシマウマが横に並んで立っています。", "sentence2": "二頭のシマウマたちが佇んでいます。", "label": "neutral"}
-{"sentence_pair_id": "416", "yjcaptions_id": "197853-73341-73342", "sentence1": "時計台の屋根に風見鶏が付いています。", "sentence2": "屋根に風見鶏がついている時計台があります。", "label": "neutral"}
+{"sentence_pair_id": "415", "yjcaptions_id": "19719-21829-21827", "sentence1": "２頭のシマウマが横に並んで立っています。", "sentence2": "二頭のシマウマたちが佇んでいます。", "label": "entailment"}
+{"sentence_pair_id": "416", "yjcaptions_id": "197853-73341-73342", "sentence1": "時計台の屋根に風見鶏が付いています。", "sentence2": "屋根に風見鶏がついている時計台があります。", "label": "entailment"}
 {"sentence_pair_id": "417", "yjcaptions_id": "197853-73342-73341", "sentence1": "屋根に風見鶏がついている時計台があります。", "sentence2": "時計台の屋根に風見鶏が付いています。", "label": "entailment"}
 {"sentence_pair_id": "418", "yjcaptions_id": "198084-73516-73517", "sentence1": "雪の林を背景にスノーボードで飛んでいる人物がいます。", "sentence2": "外で女の子がスノーボードでジャンプしています。", "label": "neutral"}
 {"sentence_pair_id": "419", "yjcaptions_id": "198084-73517-73516", "sentence1": "外で女の子がスノーボードでジャンプしています。", "sentence2": "雪の林を背景にスノーボードで飛んでいる人物がいます。", "label": "neutral"}
@@ -455,7 +455,7 @@
 {"sentence_pair_id": "454", "yjcaptions_id": "204014-78963-78960", "sentence1": "蒸気機関車が線路に停車しています。", "sentence2": "白い煙を上げながら、蒸気機関車がホームにいます。", "label": "neutral"}
 {"sentence_pair_id": "455", "yjcaptions_id": "205724-80641-80644", "sentence1": "秋が旬である林檎や桃、葡萄であふれる店先です。", "sentence2": "色々な種類のリンゴが並べてあり、奥の方にはブドウも並べてある。", "label": "neutral"}
 {"sentence_pair_id": "456", "yjcaptions_id": "205724-80644-80641", "sentence1": "色々な種類のリンゴが並べてあり、奥の方にはブドウも並べてある。", "sentence2": "秋が旬である林檎や桃、葡萄であふれる店先です。", "label": "neutral"}
-{"sentence_pair_id": "457", "yjcaptions_id": "205931-80838-80842", "sentence1": "室内に青色の傘と赤色の傘と緑色の傘があり、女性が赤色の傘に花の絵を描いています。", "sentence2": "室内で女性が座って傘に絵を描いています。", "label": "entailment"}
+{"sentence_pair_id": "457", "yjcaptions_id": "205931-80838-80842", "sentence1": "室内に青色の傘と赤色の傘と緑色の傘があり、女性が赤色の傘に花の絵を描いています。", "sentence2": "室内で女性が座って傘に絵を描いています。", "label": "neutral"}
 {"sentence_pair_id": "458", "yjcaptions_id": "205931-80842-80838", "sentence1": "室内で女性が座って傘に絵を描いています。", "sentence2": "室内に青色の傘と赤色の傘と緑色の傘があり、女性が赤色の傘に花の絵を描いています。", "label": "neutral"}
 {"sentence_pair_id": "459", "yjcaptions_id": "206017-80963-80965", "sentence1": "急流でサーフボードを持っている人がいます。", "sentence2": "急流のそばで、サーフボード持つ人がいます。", "label": "neutral"}
 {"sentence_pair_id": "460", "yjcaptions_id": "206137-81078-81079", "sentence1": "海水浴場にたくさんのパラソルがあります。", "sentence2": "海水浴場にたくさんのパラソルがあります。", "label": "entailment"}
@@ -592,7 +592,7 @@
 {"sentence_pair_id": "591", "yjcaptions_id": "243045-115429-115432", "sentence1": "車の中で男性の隣の女性が電話をしています。", "sentence2": "正装の男女が車の後部座席に座り、女性は携帯電話で通話しています。", "label": "neutral"}
 {"sentence_pair_id": "592", "yjcaptions_id": "243045-115432-115429", "sentence1": "正装の男女が車の後部座席に座り、女性は携帯電話で通話しています。", "sentence2": "車の中で男性の隣の女性が電話をしています。", "label": "entailment"}
 {"sentence_pair_id": "593", "yjcaptions_id": "243330-115628-115631", "sentence1": "跳ねる馬に乗った男性がロデオをしています。", "sentence2": "馬の上に男性が乗って、ロデオをしています。", "label": "entailment"}
-{"sentence_pair_id": "594", "yjcaptions_id": "243330-115631-115628", "sentence1": "馬の上に男性が乗って、ロデオをしています。", "sentence2": "跳ねる馬に乗った男性がロデオをしています。", "label": "entailment"}
+{"sentence_pair_id": "594", "yjcaptions_id": "243330-115631-115628", "sentence1": "馬の上に男性が乗って、ロデオをしています。", "sentence2": "跳ねる馬に乗った男性がロデオをしています。", "label": "neutral"}
 {"sentence_pair_id": "595", "yjcaptions_id": "245559-117617-117614", "sentence1": "一台の列車が駅に入ってきています。", "sentence2": "線路上に、白い車体で前面に数字の書かれた電車があります。", "label": "neutral"}
 {"sentence_pair_id": "596", "yjcaptions_id": "246796-43341-43344", "sentence1": "飛行場でプロペラ機が駐車しています。", "sentence2": "飛行機が飛行場の建物立つ前に停車しています。", "label": "neutral"}
 {"sentence_pair_id": "597", "yjcaptions_id": "246796-43344-43341", "sentence1": "飛行機が飛行場の建物立つ前に停車しています。", "sentence2": "飛行場でプロペラ機が駐車しています。", "label": "neutral"}
@@ -769,7 +769,7 @@
 {"sentence_pair_id": "768", "yjcaptions_id": "282252-22263-22261", "sentence1": "港の広場に軍用機が展示されています。", "sentence2": "青空の下、広場を背景に、丸いチーズショップの看板があります。", "label": "neutral"}
 {"sentence_pair_id": "769", "yjcaptions_id": "282380-22415-22418", "sentence1": "海の上で男性がサーフィンをしています。", "sentence2": "サーファーが波に乗って滑っています。", "label": "neutral"}
 {"sentence_pair_id": "770", "yjcaptions_id": "282855-22959-22958", "sentence1": "電子レンジ６台が棚の上においてあります。", "sentence2": "ステンレス製の電子レンジが２段に３台ずつ並んでいます。", "label": "neutral"}
-{"sentence_pair_id": "771", "yjcaptions_id": "284131-24286-24285", "sentence1": "サーファーが波に乗って立っています。", "sentence2": "海にて、サーファーが波に乗っています。", "label": "neutral"}
+{"sentence_pair_id": "771", "yjcaptions_id": "284131-24286-24285", "sentence1": "サーファーが波に乗って立っています。", "sentence2": "海にて、サーファーが波に乗っています。", "label": "entailment"}
 {"sentence_pair_id": "772", "yjcaptions_id": "284131-24287-24288", "sentence1": "海の上でサーフィンをしている人がいます。", "sentence2": "海の上で、サーファーが波に乗っています。", "label": "entailment"}
 {"sentence_pair_id": "773", "yjcaptions_id": "284131-24288-24287", "sentence1": "海の上で、サーファーが波に乗っています。", "sentence2": "海の上でサーフィンをしている人がいます。", "label": "entailment"}
 {"sentence_pair_id": "774", "yjcaptions_id": "284783-24874-g4899", "sentence1": "公園に停めた車の前に男女が立っています。", "sentence2": "公園に自転車が停まっています。", "label": "contradiction"}
@@ -889,7 +889,7 @@
 {"sentence_pair_id": "888", "yjcaptions_id": "302618-45160-45161", "sentence1": "洗面所は生理整頓がされておりきれいな状態です。", "sentence2": "部屋の奥の洗面台の左下に青い容器が置かれています。", "label": "neutral"}
 {"sentence_pair_id": "889", "yjcaptions_id": "302618-45161-45160", "sentence1": "部屋の奥の洗面台の左下に青い容器が置かれています。", "sentence2": "洗面所は生理整頓がされておりきれいな状態です。", "label": "neutral"}
 {"sentence_pair_id": "890", "yjcaptions_id": "303003-45586-45585", "sentence1": "クマの形をしたケーキが置かれています。", "sentence2": "クマをモチーフにしたケーキがあります。", "label": "entailment"}
-{"sentence_pair_id": "891", "yjcaptions_id": "304015-46631-46635", "sentence1": "荷車に複数のスーツケースが積まれています。", "sentence2": "多数のトランクが置かれた荷台が有ります。", "label": "entailment"}
+{"sentence_pair_id": "891", "yjcaptions_id": "304015-46631-46635", "sentence1": "荷車に複数のスーツケースが積まれています。", "sentence2": "多数のトランクが置かれた荷台が有ります。", "label": "neutral"}
 {"sentence_pair_id": "892", "yjcaptions_id": "304015-46635-46631", "sentence1": "多数のトランクが置かれた荷台が有ります。", "sentence2": "荷車に複数のスーツケースが積まれています。", "label": "neutral"}
 {"sentence_pair_id": "893", "yjcaptions_id": "30565-33673-33674", "sentence1": "水辺に立っている象たちがいます。", "sentence2": "象が水のみ場近くで立っていて数頭はかたまっている。", "label": "neutral"}
 {"sentence_pair_id": "894", "yjcaptions_id": "30565-33674-33673", "sentence1": "象が水のみ場近くで立っていて数頭はかたまっている。", "sentence2": "水辺に立っている象たちがいます。", "label": "entailment"}
@@ -1065,7 +1065,7 @@
 {"sentence_pair_id": "1064", "yjcaptions_id": "336172-g3839-80021", "sentence1": "砂の上にウマを連れた男性が走っています。", "sentence2": "砂の上にウマを連れた男性が立っています。", "label": "contradiction"}
 {"sentence_pair_id": "1065", "yjcaptions_id": "336449-80299-80297", "sentence1": "白いプレートにピザやお寿司が盛り付けられています。", "sentence2": "皿の上にピザと寿司が乗っています。", "label": "entailment"}
 {"sentence_pair_id": "1066", "yjcaptions_id": "336449-80299-80300", "sentence1": "白いプレートにピザやお寿司が盛り付けられています。", "sentence2": "白いお皿に、握り寿司3つにピザとパンが盛り付けられています。", "label": "neutral"}
-{"sentence_pair_id": "1067", "yjcaptions_id": "336449-80300-80299", "sentence1": "白いお皿に、握り寿司3つにピザとパンが盛り付けられています。", "sentence2": "白いプレートにピザやお寿司が盛り付けられています。", "label": "neutral"}
+{"sentence_pair_id": "1067", "yjcaptions_id": "336449-80300-80299", "sentence1": "白いお皿に、握り寿司3つにピザとパンが盛り付けられています。", "sentence2": "白いプレートにピザやお寿司が盛り付けられています。", "label": "entailment"}
 {"sentence_pair_id": "1068", "yjcaptions_id": "337448-81327-81329", "sentence1": "机の上にノートパソコンと周辺機器が置かれています。", "sentence2": "机の上にパソコンや本などがあります。", "label": "neutral"}
 {"sentence_pair_id": "1069", "yjcaptions_id": "337448-81329-81327", "sentence1": "机の上にパソコンや本などがあります。", "sentence2": "机の上にノートパソコンと周辺機器が置かれています。", "label": "neutral"}
 {"sentence_pair_id": "1070", "yjcaptions_id": "337607-81501-81504", "sentence1": "バッターボックスに、バットを振り切るバッターがいます。", "sentence2": "右打者がバッターボックスでバットを振り切っています。", "label": "neutral"}
@@ -1085,7 +1085,7 @@
 {"sentence_pair_id": "1084", "yjcaptions_id": "340222-83795-83792", "sentence1": "少し左に曲がった赤い大きなつり橋があります。", "sentence2": "青空とあおい海と赤い吊り橋があります。", "label": "neutral"}
 {"sentence_pair_id": "1085", "yjcaptions_id": "340333-83909-83910", "sentence1": "クマが壁にもたれて座っています。", "sentence2": "クマがコンクリートの上に座っています。", "label": "neutral"}
 {"sentence_pair_id": "1086", "yjcaptions_id": "340333-83910-83909", "sentence1": "クマがコンクリートの上に座っています。", "sentence2": "クマが壁にもたれて座っています。", "label": "neutral"}
-{"sentence_pair_id": "1087", "yjcaptions_id": "342105-85550-85552", "sentence1": "土の上で大きなゾウの後ろに小さな子象が２匹付いてきています。", "sentence2": "大人のゾウが一頭と子どものゾウが二頭います。", "label": "entailment"}
+{"sentence_pair_id": "1087", "yjcaptions_id": "342105-85550-85552", "sentence1": "土の上で大きなゾウの後ろに小さな子象が２匹付いてきています。", "sentence2": "大人のゾウが一頭と子どものゾウが二頭います。", "label": "neutral"}
 {"sentence_pair_id": "1088", "yjcaptions_id": "342105-85552-85550", "sentence1": "大人のゾウが一頭と子どものゾウが二頭います。", "sentence2": "土の上で大きなゾウの後ろに小さな子象が２匹付いてきています。", "label": "neutral"}
 {"sentence_pair_id": "1089", "yjcaptions_id": "345432-110409-110408", "sentence1": "テーブルの上にある、食べ残した皿を犬がテーブルの縁に顔を出して見ています。", "sentence2": "食べ終わったお皿の向こうで犬がテーブルに顎を乗せています。", "label": "neutral"}
 {"sentence_pair_id": "1090", "yjcaptions_id": "345813-88955-88956", "sentence1": "緑の縁、中はピンクのフリスビーを前に、犬が舌を出して座っています。", "sentence2": "芝生の上にあるフライングディスクの前に黒い犬が伏せています。", "label": "neutral"}
@@ -1279,7 +1279,7 @@
 {"sentence_pair_id": "1278", "yjcaptions_id": "382620-123315-g1354", "sentence1": "チエックのシャツを着たメガネの男性がカメラを構えています。", "sentence2": "白いTシャツを着た男がカメラを持っている。", "label": "contradiction"}
 {"sentence_pair_id": "1279", "yjcaptions_id": "382620-g1354-123315", "sentence1": "白いTシャツを着た男がカメラを持っている。", "sentence2": "チエックのシャツを着たメガネの男性がカメラを構えています。", "label": "contradiction"}
 {"sentence_pair_id": "1280", "yjcaptions_id": "382839-123574-123572", "sentence1": "山が見える平原にベンチがあります。", "sentence2": "草原にあるベンチの奥にはたくさんの山々が見えます。", "label": "neutral"}
-{"sentence_pair_id": "1281", "yjcaptions_id": "382863-123602-123604", "sentence1": "お菓子を食べている男性の手と口元です。", "sentence2": "男性が口の前に、食べ物を手に持っているところです。", "label": "neutral"}
+{"sentence_pair_id": "1281", "yjcaptions_id": "382863-123602-123604", "sentence1": "お菓子を食べている男性の手と口元です。", "sentence2": "男性が口の前に、食べ物を手に持っているところです。", "label": "entailment"}
 {"sentence_pair_id": "1282", "yjcaptions_id": "382863-123604-123602", "sentence1": "男性が口の前に、食べ物を手に持っているところです。", "sentence2": "お菓子を食べている男性の手と口元です。", "label": "neutral"}
 {"sentence_pair_id": "1283", "yjcaptions_id": "382953-123688-123687", "sentence1": "道路の上を、１台のバイクが走っています。", "sentence2": "草原の間のアスファルト上をオートバイで走る人がいます。", "label": "neutral"}
 {"sentence_pair_id": "1284", "yjcaptions_id": "383401-124072-124074", "sentence1": "若い金髪の女性がテニスをしています。", "sentence2": "女性がラケットを持ってテニスをしています。", "label": "neutral"}
@@ -1435,7 +1435,7 @@
 {"sentence_pair_id": "1434", "yjcaptions_id": "413115-122309-g3132", "sentence1": "車が駐まっている道路の信号は青です。", "sentence2": "車が駐まっている道路の信号は黄です。", "label": "contradiction"}
 {"sentence_pair_id": "1435", "yjcaptions_id": "413115-g3131-122309", "sentence1": "車が駐まっている道路の信号は赤です。", "sentence2": "車が駐まっている道路の信号は青です。", "label": "contradiction"}
 {"sentence_pair_id": "1436", "yjcaptions_id": "413115-g3132-122309", "sentence1": "車が駐まっている道路の信号は黄です。", "sentence2": "車が駐まっている道路の信号は青です。", "label": "contradiction"}
-{"sentence_pair_id": "1437", "yjcaptions_id": "414244-23301-23304", "sentence1": "壁に沢山の時計が掛かっています。", "sentence2": "様々な時計が、壁一面にかけられています。", "label": "entailment"}
+{"sentence_pair_id": "1437", "yjcaptions_id": "414244-23301-23304", "sentence1": "壁に沢山の時計が掛かっています。", "sentence2": "様々な時計が、壁一面にかけられています。", "label": "neutral"}
 {"sentence_pair_id": "1438", "yjcaptions_id": "414244-23304-23301", "sentence1": "様々な時計が、壁一面にかけられています。", "sentence2": "壁に沢山の時計が掛かっています。", "label": "entailment"}
 {"sentence_pair_id": "1439", "yjcaptions_id": "414244-23304-23303", "sentence1": "様々な時計が、壁一面にかけられています。", "sentence2": "主に丸い形の多数の掛け時計が壁にあります。", "label": "neutral"}
 {"sentence_pair_id": "1440", "yjcaptions_id": "414539-23621-23625", "sentence1": "銀色の表面をした冷蔵庫があります。", "sentence2": "厨房の中には両開きの大きな冷蔵庫が置かれています。", "label": "neutral"}
@@ -1532,7 +1532,7 @@
 {"sentence_pair_id": "1531", "yjcaptions_id": "433096-g130-44428", "sentence1": "スケートボードを持っている人が歩いてきます。", "sentence2": "スケートボードをしている人がジャンプしています。", "label": "contradiction"}
 {"sentence_pair_id": "1532", "yjcaptions_id": "433413-44811-44812", "sentence1": "白い大型トラックが赤信号で停まっている。", "sentence2": "赤信号で大型トラックが停まっています。", "label": "entailment"}
 {"sentence_pair_id": "1533", "yjcaptions_id": "433413-44812-44811", "sentence1": "赤信号で大型トラックが停まっています。", "sentence2": "白い大型トラックが赤信号で停まっている。", "label": "neutral"}
-{"sentence_pair_id": "1534", "yjcaptions_id": "433657-45135-45136", "sentence1": "草原にたくさんのヤギが放牧されています。", "sentence2": "広大な草原に放牧されているヤギがいます。", "label": "entailment"}
+{"sentence_pair_id": "1534", "yjcaptions_id": "433657-45135-45136", "sentence1": "草原にたくさんのヤギが放牧されています。", "sentence2": "広大な草原に放牧されているヤギがいます。", "label": "neutral"}
 {"sentence_pair_id": "1535", "yjcaptions_id": "433657-45136-45135", "sentence1": "広大な草原に放牧されているヤギがいます。", "sentence2": "草原にたくさんのヤギが放牧されています。", "label": "entailment"}
 {"sentence_pair_id": "1536", "yjcaptions_id": "433900-45381-45384", "sentence1": "黄色の壁と白いドアがあるキッチンです。", "sentence2": "ライトの点いたキッチンやシンクの上にいろいろな物が置かれています。", "label": "neutral"}
 {"sentence_pair_id": "1537", "yjcaptions_id": "433900-45384-45381", "sentence1": "ライトの点いたキッチンやシンクの上にいろいろな物が置かれています。", "sentence2": "黄色の壁と白いドアがあるキッチンです。", "label": "neutral"}
@@ -1606,10 +1606,10 @@
 {"sentence_pair_id": "1605", "yjcaptions_id": "446514-59562-g1514", "sentence1": "車のミラーに運転手が写っています。", "sentence2": "バイクのミラーに運転手が写っています。", "label": "contradiction"}
 {"sentence_pair_id": "1606", "yjcaptions_id": "446514-g1514-59562", "sentence1": "バイクのミラーに運転手が写っています。", "sentence2": "車のミラーに運転手が写っています。", "label": "contradiction"}
 {"sentence_pair_id": "1607", "yjcaptions_id": "446901-60025-60026", "sentence1": "波打ち際でサーファーがサーフボードを持って歩いています。", "sentence2": "海辺のビーチにて、サーフボードを持った男性が歩いています。", "label": "neutral"}
-{"sentence_pair_id": "1608", "yjcaptions_id": "446901-60026-60025", "sentence1": "海辺のビーチにて、サーフボードを持った男性が歩いています。", "sentence2": "波打ち際でサーファーがサーフボードを持って歩いています。", "label": "entailment"}
+{"sentence_pair_id": "1608", "yjcaptions_id": "446901-60026-60025", "sentence1": "海辺のビーチにて、サーフボードを持った男性が歩いています。", "sentence2": "波打ち際でサーファーがサーフボードを持って歩いています。", "label": "neutral"}
 {"sentence_pair_id": "1609", "yjcaptions_id": "446945-66939-66942", "sentence1": "白熊が池の水に飛び込もうとしています。", "sentence2": "水際に一頭の白熊が立っています。", "label": "neutral"}
 {"sentence_pair_id": "1610", "yjcaptions_id": "446945-66942-66939", "sentence1": "水際に一頭の白熊が立っています。", "sentence2": "白熊が池の水に飛び込もうとしています。", "label": "neutral"}
-{"sentence_pair_id": "1611", "yjcaptions_id": "447082-60251-60252", "sentence1": "階段にたくさんの男女が腰を掛けています。", "sentence2": "階段のある場所にたくさんの人が腰を掛けています。", "label": "neutral"}
+{"sentence_pair_id": "1611", "yjcaptions_id": "447082-60251-60252", "sentence1": "階段にたくさんの男女が腰を掛けています。", "sentence2": "階段のある場所にたくさんの人が腰を掛けています。", "label": "entailment"}
 {"sentence_pair_id": "1612", "yjcaptions_id": "447082-60252-60251", "sentence1": "階段のある場所にたくさんの人が腰を掛けています。", "sentence2": "階段にたくさんの男女が腰を掛けています。", "label": "neutral"}
 {"sentence_pair_id": "1613", "yjcaptions_id": "447182-60368-60369", "sentence1": "傾斜の強い雪面をスキーヤーが滑っています。", "sentence2": "雪山の斜面をスキーで滑走していた。", "label": "entailment"}
 {"sentence_pair_id": "1614", "yjcaptions_id": "447182-60369-60368", "sentence1": "雪山の斜面をスキーで滑走していた。", "sentence2": "傾斜の強い雪面をスキーヤーが滑っています。", "label": "neutral"}
@@ -1648,7 +1648,7 @@
 {"sentence_pair_id": "1647", "yjcaptions_id": "453629-104642-104640", "sentence1": "白い大皿に載せられた料理を手を使わずに食べようとしている男性がいます。", "sentence2": "白いシーツの敷かれた台の上に置かれたお皿に盛られた食べ物に舌を出した顔を近づけている人物がいます。", "label": "neutral"}
 {"sentence_pair_id": "1648", "yjcaptions_id": "453695-67201-67202", "sentence1": "木の柱に赤い標識が取り付けられています。", "sentence2": "ここでは一時停止してくださいという表示があります。", "label": "neutral"}
 {"sentence_pair_id": "1649", "yjcaptions_id": "453695-67202-67201", "sentence1": "ここでは一時停止してくださいという表示があります。", "sentence2": "木の柱に赤い標識が取り付けられています。", "label": "neutral"}
-{"sentence_pair_id": "1650", "yjcaptions_id": "454258-67698-67700", "sentence1": "青いボールの中にみかんとりんごが入っています。", "sentence2": "青いボールにリンゴとオレンジが盛られています。", "label": "neutral"}
+{"sentence_pair_id": "1650", "yjcaptions_id": "454258-67698-67700", "sentence1": "青いボールの中にみかんとりんごが入っています。", "sentence2": "青いボールにリンゴとオレンジが盛られています。", "label": "entailment"}
 {"sentence_pair_id": "1651", "yjcaptions_id": "454258-67700-67698", "sentence1": "青いボールにリンゴとオレンジが盛られています。", "sentence2": "青いボールの中にみかんとりんごが入っています。", "label": "entailment"}
 {"sentence_pair_id": "1652", "yjcaptions_id": "455342-68666-68667", "sentence1": "個室のトイレには赤い花が活けてあります。", "sentence2": "ベージュを基調としたトイレットルームです。", "label": "neutral"}
 {"sentence_pair_id": "1653", "yjcaptions_id": "455342-68667-68666", "sentence1": "ベージュを基調としたトイレットルームです。", "sentence2": "個室のトイレには赤い花が活けてあります。", "label": "neutral"}
@@ -1686,7 +1686,7 @@
 {"sentence_pair_id": "1685", "yjcaptions_id": "460458-73738-73736", "sentence1": "人通りのある街の通りで少年たちがスケートボードをしています。", "sentence2": "男性がスケートボードに乗ってジャンプしています。", "label": "neutral"}
 {"sentence_pair_id": "1686", "yjcaptions_id": "460950-74148-74149", "sentence1": "スパゲティとホットドッグと飲み物が置かれています。", "sentence2": "茶色のトレーの上にはホットドッグとスパゲッティーが置いてあります。", "label": "neutral"}
 {"sentence_pair_id": "1687", "yjcaptions_id": "462186-75237-75241", "sentence1": "雪山でスキーヤーが宙返りをしています。", "sentence2": "スキーヤーが斜面で背中を下にしながらジャンプしています。", "label": "neutral"}
-{"sentence_pair_id": "1688", "yjcaptions_id": "462186-75240-75237", "sentence1": "スキーヤーが斜面で宙返りをしています。", "sentence2": "雪山でスキーヤーが宙返りをしています。", "label": "entailment"}
+{"sentence_pair_id": "1688", "yjcaptions_id": "462186-75240-75237", "sentence1": "スキーヤーが斜面で宙返りをしています。", "sentence2": "雪山でスキーヤーが宙返りをしています。", "label": "neutral"}
 {"sentence_pair_id": "1689", "yjcaptions_id": "462186-75241-75237", "sentence1": "スキーヤーが斜面で背中を下にしながらジャンプしています。", "sentence2": "雪山でスキーヤーが宙返りをしています。", "label": "neutral"}
 {"sentence_pair_id": "1690", "yjcaptions_id": "463319-76210-76209", "sentence1": "グラウンドで野球をしている人がいます。", "sentence2": "黒いユニフォームを着た人がバッターボックスでバットをかまえて立っています。", "label": "neutral"}
 {"sentence_pair_id": "1691", "yjcaptions_id": "463474-76369-g1335", "sentence1": "室内のスケートボードパークで、スケートボーダーたちが滑っています。", "sentence2": "屋外のスケートボードパークで、スケートボーダーたちが滑っています。", "label": "contradiction"}
@@ -1708,7 +1708,7 @@
 {"sentence_pair_id": "1707", "yjcaptions_id": "467339-80139-80140", "sentence1": "一匹のイヌが砂地をゆっくりと歩いています。", "sentence2": "砂浜を一匹の犬がゆっくりと歩いています。", "label": "entailment"}
 {"sentence_pair_id": "1708", "yjcaptions_id": "467339-80140-80139", "sentence1": "砂浜を一匹の犬がゆっくりと歩いています。", "sentence2": "一匹のイヌが砂地をゆっくりと歩いています。", "label": "entailment"}
 {"sentence_pair_id": "1709", "yjcaptions_id": "46813-52028-52030", "sentence1": "ワゴン車の荷台にたくさんのバナナが積まれています。", "sentence2": "車の中に沢山のバナナが積み込まれています。", "label": "entailment"}
-{"sentence_pair_id": "1710", "yjcaptions_id": "468137-80949-80950", "sentence1": "テニスコートで試合が行われているところです。", "sentence2": "テニス選手がコートでラケットを構えています。", "label": "entailment"}
+{"sentence_pair_id": "1710", "yjcaptions_id": "468137-80949-80950", "sentence1": "テニスコートで試合が行われているところです。", "sentence2": "テニス選手がコートでラケットを構えています。", "label": "neutral"}
 {"sentence_pair_id": "1711", "yjcaptions_id": "468137-80950-80949", "sentence1": "テニス選手がコートでラケットを構えています。", "sentence2": "テニスコートで試合が行われているところです。", "label": "neutral"}
 {"sentence_pair_id": "1712", "yjcaptions_id": "469170-81959-81962", "sentence1": "緑色の服を着た人が、茶色いイチゴが乗ったケーキを切っています。", "sentence2": "緑色のＴシャツを着た人が、ケーキを切り分けています。", "label": "neutral"}
 {"sentence_pair_id": "1713", "yjcaptions_id": "469170-81962-81959", "sentence1": "緑色のＴシャツを着た人が、ケーキを切り分けています。", "sentence2": "緑色の服を着た人が、茶色いイチゴが乗ったケーキを切っています。", "label": "neutral"}
@@ -1740,7 +1740,7 @@
 {"sentence_pair_id": "1739", "yjcaptions_id": "476011-88183-88184", "sentence1": "コンクリートの上に黒猫が横たわっています。", "sentence2": "コンクリートの上に、黒猫が寝そべっています。", "label": "entailment"}
 {"sentence_pair_id": "1740", "yjcaptions_id": "476011-88184-88183", "sentence1": "コンクリートの上に、黒猫が寝そべっています。", "sentence2": "コンクリートの上に黒猫が横たわっています。", "label": "entailment"}
 {"sentence_pair_id": "1741", "yjcaptions_id": "476074-108063-108065", "sentence1": "野球場にてホームベースそばにバッターやキャッチャーなどがいます。", "sentence2": "観客が見守る中、野球の試合が行われています。", "label": "neutral"}
-{"sentence_pair_id": "1742", "yjcaptions_id": "476074-108063-108066", "sentence1": "野球場にてホームベースそばにバッターやキャッチャーなどがいます。", "sentence2": "野球場で野球の試合をしているところです。", "label": "entailment"}
+{"sentence_pair_id": "1742", "yjcaptions_id": "476074-108063-108066", "sentence1": "野球場にてホームベースそばにバッターやキャッチャーなどがいます。", "sentence2": "野球場で野球の試合をしているところです。", "label": "neutral"}
 {"sentence_pair_id": "1743", "yjcaptions_id": "476269-88416-88418", "sentence1": "2人乗りをした、バイクが走っています。", "sentence2": "バイクを二人乗りしている人が見えます。", "label": "entailment"}
 {"sentence_pair_id": "1744", "yjcaptions_id": "476269-88418-88416", "sentence1": "バイクを二人乗りしている人が見えます。", "sentence2": "2人乗りをした、バイクが走っています。", "label": "neutral"}
 {"sentence_pair_id": "1745", "yjcaptions_id": "476380-88497-88498", "sentence1": "一枚の大きいピザが紙のボックスに入っています。", "sentence2": "カットされたコーンやトマトがトッピングされたピザです。", "label": "neutral"}
@@ -1782,7 +1782,7 @@
 {"sentence_pair_id": "1781", "yjcaptions_id": "480723-g2418-92507", "sentence1": "箱の中にケーキが入っている。", "sentence2": "金色のトレイにケーキが置かれています。", "label": "contradiction"}
 {"sentence_pair_id": "1782", "yjcaptions_id": "480723-g2889-92508", "sentence1": "トレイの上に書類が乗っています。", "sentence2": "トレイの上にケーキが乗っています。", "label": "contradiction"}
 {"sentence_pair_id": "1783", "yjcaptions_id": "481365-93203-93207", "sentence1": "列車が駅のホームに入ってきています。", "sentence2": "誰もいないホームに電車が入ってきています。", "label": "neutral"}
-{"sentence_pair_id": "1784", "yjcaptions_id": "481365-93207-93203", "sentence1": "誰もいないホームに電車が入ってきています。", "sentence2": "列車が駅のホームに入ってきています。", "label": "neutral"}
+{"sentence_pair_id": "1784", "yjcaptions_id": "481365-93207-93203", "sentence1": "誰もいないホームに電車が入ってきています。", "sentence2": "列車が駅のホームに入ってきています。", "label": "entailment"}
 {"sentence_pair_id": "1785", "yjcaptions_id": "483205-94920-g3195", "sentence1": "パソコンを置いているデスクの上に足を載せています。", "sentence2": "パソコンを置いているデスクの上に手を載せています。", "label": "contradiction"}
 {"sentence_pair_id": "1786", "yjcaptions_id": "483205-94920-g3197", "sentence1": "パソコンを置いているデスクの上に足を載せています。", "sentence2": "パソコンを置いているデスクの上に肘を載せています。", "label": "contradiction"}
 {"sentence_pair_id": "1787", "yjcaptions_id": "483205-g3195-94920", "sentence1": "パソコンを置いているデスクの上に手を載せています。", "sentence2": "パソコンを置いているデスクの上に足を載せています。", "label": "contradiction"}
@@ -1863,7 +1863,7 @@
 {"sentence_pair_id": "1862", "yjcaptions_id": "503331-113686-113690", "sentence1": "道路を走る車と、その上空を飛ぶ飛行機です。", "sentence2": "道路を走っている自動車とその上を飛行機が飛んでいます。", "label": "entailment"}
 {"sentence_pair_id": "1863", "yjcaptions_id": "503331-113690-113686", "sentence1": "道路を走っている自動車とその上を飛行機が飛んでいます。", "sentence2": "道路を走る車と、その上空を飛ぶ飛行機です。", "label": "entailment"}
 {"sentence_pair_id": "1864", "yjcaptions_id": "50379-56139-56138", "sentence1": "一台のバイクに乗った人の写真を数人の人がとっています。", "sentence2": "自動車に挟まれるようにして出発を待つオートバイがいます。", "label": "neutral"}
-{"sentence_pair_id": "1865", "yjcaptions_id": "503893-114131-114132", "sentence1": "ドアの隙間から、動物が顔を出しています。", "sentence2": "ドアがあいた隙間から動物の姿がみえています。", "label": "neutral"}
+{"sentence_pair_id": "1865", "yjcaptions_id": "503893-114131-114132", "sentence1": "ドアの隙間から、動物が顔を出しています。", "sentence2": "ドアがあいた隙間から動物の姿がみえています。", "label": "entailment"}
 {"sentence_pair_id": "1866", "yjcaptions_id": "504122-114359-114360", "sentence1": "男女がテーブルの前に腰かけドーナツを食べています。", "sentence2": "ドーナッツをかじっている男性がいます。", "label": "entailment"}
 {"sentence_pair_id": "1867", "yjcaptions_id": "504122-114360-114359", "sentence1": "ドーナッツをかじっている男性がいます。", "sentence2": "男女がテーブルの前に腰かけドーナツを食べています。", "label": "neutral"}
 {"sentence_pair_id": "1868", "yjcaptions_id": "504917-115099-g4886", "sentence1": "黄緑の服を着た女性テニスプレイヤーがテニスをしています。", "sentence2": "男性テニスプレイヤーがいます。", "label": "contradiction"}
@@ -1876,7 +1876,7 @@
 {"sentence_pair_id": "1875", "yjcaptions_id": "507212-117160-117164", "sentence1": "ノートパソコンのうえにねこがのっています。", "sentence2": "ノートパソコンの上に、ネコがのっています。", "label": "entailment"}
 {"sentence_pair_id": "1876", "yjcaptions_id": "507212-117164-117160", "sentence1": "ノートパソコンの上に、ネコがのっています。", "sentence2": "ノートパソコンのうえにねこがのっています。", "label": "entailment"}
 {"sentence_pair_id": "1877", "yjcaptions_id": "507763-35235-35236", "sentence1": "白く飾りのあるテーブルの上の、大きな透明の花瓶にいくつものひまわりが飾られています。", "sentence2": "テーブルの上にひまわりで飾られた花瓶が置いてあります。", "label": "entailment"}
-{"sentence_pair_id": "1878", "yjcaptions_id": "507763-35236-35235", "sentence1": "テーブルの上にひまわりで飾られた花瓶が置いてあります。", "sentence2": "白く飾りのあるテーブルの上の、大きな透明の花瓶にいくつものひまわりが飾られています。", "label": "entailment"}
+{"sentence_pair_id": "1878", "yjcaptions_id": "507763-35236-35235", "sentence1": "テーブルの上にひまわりで飾られた花瓶が置いてあります。", "sentence2": "白く飾りのあるテーブルの上の、大きな透明の花瓶にいくつものひまわりが飾られています。", "label": "neutral"}
 {"sentence_pair_id": "1879", "yjcaptions_id": "507936-117827-g2869", "sentence1": "駅には水色のラッピングがされた列車が停まっています。", "sentence2": "列車が走って居ます。", "label": "contradiction"}
 {"sentence_pair_id": "1880", "yjcaptions_id": "507936-g2869-117827", "sentence1": "列車が走って居ます。", "sentence2": "駅には水色のラッピングがされた列車が停まっています。", "label": "contradiction"}
 {"sentence_pair_id": "1881", "yjcaptions_id": "508191-38279-38282", "sentence1": "大型の警察用のバイクが置かれています。", "sentence2": "大型のオートバイが１台駐輪しています。", "label": "entailment"}
@@ -1910,7 +1910,7 @@
 {"sentence_pair_id": "1909", "yjcaptions_id": "515673-125257-125259", "sentence1": "女性がチョコレートのケーキを持っています。", "sentence2": "メガネをかけた女性がケーキを持っている。", "label": "neutral"}
 {"sentence_pair_id": "1910", "yjcaptions_id": "515673-125259-125261", "sentence1": "メガネをかけた女性がケーキを持っている。", "sentence2": "一人の女性が手にチョコレートのかかったお菓子を持っています。", "label": "neutral"}
 {"sentence_pair_id": "1911", "yjcaptions_id": "515673-125261-125259", "sentence1": "一人の女性が手にチョコレートのかかったお菓子を持っています。", "sentence2": "メガネをかけた女性がケーキを持っている。", "label": "neutral"}
-{"sentence_pair_id": "1912", "yjcaptions_id": "516110-125636-125639", "sentence1": "屋外で、人々と柵を隔ててバイクが数台停車しています。", "sentence2": "何台ものオートバイが駐車されている。", "label": "neutral"}
+{"sentence_pair_id": "1912", "yjcaptions_id": "516110-125636-125639", "sentence1": "屋外で、人々と柵を隔ててバイクが数台停車しています。", "sentence2": "何台ものオートバイが駐車されている。", "label": "entailment"}
 {"sentence_pair_id": "1913", "yjcaptions_id": "516110-125639-125636", "sentence1": "何台ものオートバイが駐車されている。", "sentence2": "屋外で、人々と柵を隔ててバイクが数台停車しています。", "label": "neutral"}
 {"sentence_pair_id": "1914", "yjcaptions_id": "516697-126200-126199", "sentence1": "テニスコート上で1人の人物が打球動作をしています。", "sentence2": "男性がテニスコートでボールを打っている。", "label": "neutral"}
 {"sentence_pair_id": "1915", "yjcaptions_id": "516906-126392-126393", "sentence1": "緑色のテーブルが置かれたリビングです。", "sentence2": "グリーンのテーブルと白いソファーが置かれています。", "label": "neutral"}
@@ -2212,7 +2212,7 @@
 {"sentence_pair_id": "2211", "yjcaptions_id": "58861-65621-65622", "sentence1": "洗面台には銀色に輝く蛇口が並んでいます。", "sentence2": "洗面台についている銀色の蛇口です。", "label": "entailment"}
 {"sentence_pair_id": "2212", "yjcaptions_id": "58861-65622-65621", "sentence1": "洗面台についている銀色の蛇口です。", "sentence2": "洗面台には銀色に輝く蛇口が並んでいます。", "label": "neutral"}
 {"sentence_pair_id": "2213", "yjcaptions_id": "59416-66148-66150", "sentence1": "橋桁の上をモノレールが通行しています。", "sentence2": "２両のモノレールが橋の上のレールを走っています。", "label": "neutral"}
-{"sentence_pair_id": "2214", "yjcaptions_id": "59416-66150-66148", "sentence1": "２両のモノレールが橋の上のレールを走っています。", "sentence2": "橋桁の上をモノレールが通行しています。", "label": "neutral"}
+{"sentence_pair_id": "2214", "yjcaptions_id": "59416-66150-66148", "sentence1": "２両のモノレールが橋の上のレールを走っています。", "sentence2": "橋桁の上をモノレールが通行しています。", "label": "entailment"}
 {"sentence_pair_id": "2215", "yjcaptions_id": "59985-66720-g4269", "sentence1": "海沿いの道を一人の人が、自転車に乗って走っています。", "sentence2": "川沿いの道を一人の人が、自転車に乗って走っています。", "label": "contradiction"}
 {"sentence_pair_id": "2216", "yjcaptions_id": "59985-66720-g4272", "sentence1": "海沿いの道を一人の人が、自転車に乗って走っています。", "sentence2": "海沿いの道を一人の人が、走っています。", "label": "contradiction"}
 {"sentence_pair_id": "2217", "yjcaptions_id": "59985-g4269-66720", "sentence1": "川沿いの道を一人の人が、自転車に乗って走っています。", "sentence2": "海沿いの道を一人の人が、自転車に乗って走っています。", "label": "contradiction"}
@@ -2371,7 +2371,7 @@
 {"sentence_pair_id": "2370", "yjcaptions_id": "86409-91596-91592", "sentence1": "練習中の男子テニスプレーヤーがいます。", "sentence2": "テニスラケットを持った男性が1人います。", "label": "neutral"}
 {"sentence_pair_id": "2371", "yjcaptions_id": "86556-91723-91724", "sentence1": "ベットとソファーのある室内にパソコンを見ている二人の人間がいます。", "sentence2": "ベッドとソファの上で2人の人がノートパソコンを操作しています。", "label": "neutral"}
 {"sentence_pair_id": "2372", "yjcaptions_id": "87685-92724-92723", "sentence1": "綺麗にライトアップされた時計台が建っています。", "sentence2": "ライトアップされた時計塔が建っています。", "label": "entailment"}
-{"sentence_pair_id": "2373", "yjcaptions_id": "88635-93704-93705", "sentence1": "雪の上でスキー板を手にした人たちがいます。", "sentence2": "雪の上にたくさんの人がスキーを持って集まっています。", "label": "entailment"}
+{"sentence_pair_id": "2373", "yjcaptions_id": "88635-93704-93705", "sentence1": "雪の上でスキー板を手にした人たちがいます。", "sentence2": "雪の上にたくさんの人がスキーを持って集まっています。", "label": "neutral"}
 {"sentence_pair_id": "2374", "yjcaptions_id": "88635-93705-93704", "sentence1": "雪の上にたくさんの人がスキーを持って集まっています。", "sentence2": "雪の上でスキー板を手にした人たちがいます。", "label": "entailment"}
 {"sentence_pair_id": "2375", "yjcaptions_id": "88744-93821-g4551", "sentence1": "観葉植物の茂みのそばの花瓶に紫の造花が2本活けてあります。", "sentence2": "観葉植物の茂みのそばの花瓶に紫の造花が1本活けてあります。", "label": "contradiction"}
 {"sentence_pair_id": "2376", "yjcaptions_id": "88744-93821-g4552", "sentence1": "観葉植物の茂みのそばの花瓶に紫の造花が2本活けてあります。", "sentence2": "観葉植物の茂みのそばの花瓶に青の造花が2本活けてあります。", "label": "contradiction"}
