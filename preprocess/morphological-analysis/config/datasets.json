@@ -2,29 +2,34 @@
     { "dirname": "marc_ja-v1.2",
       "train_file_basename": "train-v1.2.json",
       "valid_file_basename": "valid-v1.2.json",
+      "test_file_basename": "test-v1.2.json",
       "column-names": "sentence",
       "input-file-type": "json"
     },
     { "dirname": "jsts-v1.2",
       "train_file_basename": "train-v1.2.json",
       "valid_file_basename": "valid-v1.2.json",
+      "test_file_basename": "test-v1.2.json",
       "column-names": "sentence1 sentence2",
       "input-file-type": "json"
     },
     { "dirname": "jnli-v1.2",
       "train_file_basename": "train-v1.2.json",
       "valid_file_basename": "valid-v1.2.json",
+      "test_file_basename": "test-v1.2.json",
       "column-names": "sentence1 sentence2",
       "input-file-type": "json"
     },
     { "dirname": "jsquad-v1.2",
       "train_file_basename": "train-v1.2.json",
       "valid_file_basename": "valid-v1.2.json",
+      "test_file_basename": "test-v1.2.json",
       "input-file-type": "squad_json"
     },
     { "dirname": "jcommonsenseqa-v1.2",
       "train_file_basename": "train-v1.2.json",
       "valid_file_basename": "valid-v1.2.json",
+      "test_file_basename": "test-v1.2.json",
       "column-names": "question choice0 choice1 choice2 choice3 choice4",
       "input-file-type": "json"
     }
