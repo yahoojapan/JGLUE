@@ -13,13 +13,14 @@ def main(args):
         for morphological_analyzer in args.morphological_analyzers:
             output_dir = f"{args.data_dir}/{dataset['dirname']}_{morphological_analyzer}"
 
-            target = dataset["target"] if "target" in dataset else "out_train_file out_valid_file"
+            target = dataset["target"] if "target" in dataset else "out_train_file out_valid_file out_test_file"
             cmds = ["make", target,
                     "-f", "Makefile",
                     "INPUT_DIR={}".format(input_dir),
                     "OUTPUT_DIR={}".format(output_dir),
                     "TRAIN_FILE_BASENAME={}".format(dataset["train_file_basename"]),
                     "VALID_FILE_BASENAME={}".format(dataset["valid_file_basename"]),
+                    "TEST_FILE_BASENAME={}".format(dataset["test_file_basename"]),
                     "MORPHOLOGICAL_ANALYZER={}".format(morphological_analyzer),
                     "INPUT_FILE_TYPE={}".format(dataset["input-file-type"])]
             if "column-names" in dataset:
