@@ -48,12 +48,12 @@ $ cd preprocess/marc-ja/scripts
 $ gzip -dc /somewhere/amazon_reviews_multilingual_JP_v1_00.tsv.gz | \
   python marc-ja.py \
          --positive-negative \
-         --output-dir ../../../datasets/marc_ja-v1.1 \
+         --output-dir ../../../datasets/marc_ja-v1.2 \
          --max-char-length 500 \
          --filter-review-id-list-valid ../data/filter_review_id_list/valid.txt \
          --label-conv-review-id-list-valid ../data/label_conv_review_id_list/valid.txt
 ```
-~~The train and valid sets will be generated under the `datasets/marc_ja-v1.1` directory.~~
+~~The train and valid sets will be generated under the `datasets/marc_ja-v1.2` directory.~~
 
 
 ~~When you use this dataset, please follow the license of [Multilingual Amazon Reviews Corpus (MARC)](https://docs.opendata.aws/amazon-reviews-ml/readme.html).~~

@@ -7,7 +7,7 @@ We used [the transformers library](https://github.com/huggingface/transformers) 
 $ cd /somewhere/  
 $ git clone https://github.com/huggingface/transformers.git -b v4.9.2 transformers-4.9.2
 $ cd transformers-4.9.2
-$ patch -p1 < /somewhere2/JGLUE/fine-tuning/patch/transformers-4.9.2_jglue-1.1.0.patch
+$ patch -p1 < /somewhere2/JGLUE/fine-tuning/patch/transformers-4.9.2_jglue-1.2.0.patch
 $ pip install .
 $ pip install -r examples/pytorch/text-classification/requirements.txt
 $ pip install protobuf==3.19.1 tensorboard
@@ -41,9 +41,9 @@ $ python /somewhere/transformers-4.9.2/examples/pytorch/text-classification/run_
      --learning_rate 5e-05 \
      --num_train_epochs 4 \
      --output_dir $OUTPUT_DIR \
-     --train_file ../datasets/marc_ja-v1.1/train-v1.1.json \
-     --validation_file ../datasets/marc_ja-v1.1/valid-v1.1.json \
-     --test_file ../datasets/marc_ja-v1.1/valid-v1.1.json \
+     --train_file ../datasets/marc_ja-v1.2/train-v1.2.json \
+     --validation_file ../datasets/marc_ja-v1.2/valid-v1.2.json \
+     --test_file ../datasets/marc_ja-v1.2/valid-v1.2.json \
      --use_fast_tokenizer False \
      --evaluation_strategy epoch \
      --save_steps 5000 \
@@ -59,9 +59,9 @@ When you fine-tune the NICT BERT base or Waseda RoBERTa base/large models, pleas
 
 ```bash
      ..
-     --train_file ../datasets/marc_ja-v1.1_jumanpp/train-v1.1.json \
-     --validation_file ../datasets/marc_ja-v1.1_jumanpp/valid-v1.1.json \
-     -test_file ../datasets/marc_ja-v1.1_jumanpp/valid-v1.1.json \
+     --train_file ../datasets/marc_ja-v1.2_jumanpp/train-v1.2.json \
+     --validation_file ../datasets/marc_ja-v1.2_jumanpp/valid-v1.2.json \
+     -test_file ../datasets/marc_ja-v1.2_jumanpp/valid-v1.2.json \
      ..  
 ```
 
@@ -72,7 +72,7 @@ For the examination of the system prediction, the system prediction as well as t
 ```bash
 $ python scripts/generate_results.py \
      --system-predict-txt $OUTPUT_DIR/predict_results_sst2.txt \
-     --input-file ../datasets/marc_ja-v1.1/valid-v1.1.json \
+     --input-file ../datasets/marc_ja-v1.2/valid-v1.2.json \
      --task-type single-sentence \
      --additional-column-name-string review_id > $OUTPUT_DIR/predict_eval_results.tsv
 ```
@@ -80,7 +80,7 @@ $ python scripts/generate_results.py \
 ```bash
 $ python scripts/generate_results.py \
      --system-predict-txt $OUTPUT_DIR/predict_results_stsb.txt \
-     --input-file ../datasets/jsts-v1.1/valid-v1.1.json \
+     --input-file ../datasets/jsts-v1.2/valid-v1.2.json \
      --task-type sentence-pair \
      --classification-type regression \
      --additional-column-name-string sentence_pair_id,yjcaptions_id > $OUTPUT_DIR/predict_eval_results.tsv
@@ -90,7 +90,7 @@ $ python scripts/generate_results.py \
 ```bash 
 $ python scripts/generate_results.py \
      --system-predict-txt $OUTPUT_DIR/predict_results_wnli.txt \
-     --input-file ../datasets/jnli-v1.1/valid-v1.1.json \
+     --input-file ../datasets/jnli-v1.2/valid-v1.2.json \
      --task-type sentence-pair \
      --additional-column-name-string sentence_pair_id,yjcaptions_id > $OUTPUT_DIR/predict_eval_results.tsv
 ``` 
@@ -108,8 +108,8 @@ $ python /somewhere/transformers-4.9.2/examples/legacy/question-answering/run_sq
      --per_gpu_train_batch_size 32 \
      --per_gpu_eval_batch_size 32 \
      --output_dir $OUTPUT_DIR \
-     --train_file ../datasets/jsquad-v1.1/train-v1.1.json \
-     --predict_file ../datasets/jsquad-v1.1/valid-v1.1.json \
+     --train_file ../datasets/jsquad-v1.2/train-v1.2.json \
+     --predict_file ../datasets/jsquad-v1.2/valid-v1.2.json \
      --save_steps 5000 \
      --warmup_ratio 0.1 \
      --evaluate_prefix eval
@@ -127,9 +127,9 @@ $ python /somewhere/transformers-4.9.2/examples/pytorch/multiple-choice/run_swag
      --learning_rate 5e-05 \
      --num_train_epochs 4 \
      --output_dir $OUTPUT_DIR \
-     --train_file ../datasets/jcommonsenseqa-v1.1/train-v1.1.json \
-     --validation_file ../datasets/jcommonsenseqa-v1.1/valid-v1.1.json \
-     --test_file ../datasets/jcommonsenseqa-v1.1/valid-v1.1.json \
+     --train_file ../datasets/jcommonsenseqa-v1.2/train-v1.2.json \
+     --validation_file ../datasets/jcommonsenseqa-v1.2/valid-v1.2.json \
+     --test_file ../datasets/jcommonsenseqa-v1.2/valid-v1.2.json \
      --use_fast_tokenizer False \
      --evaluation_strategy epoch \
      --warmup_ratio 0.1
@@ -139,7 +139,7 @@ For the examination of the system prediction, the system prediction as well as t
 ```bash
 $ python scripts/generate_results.py \
      --system-predict-txt $OUTPUT_DIR/predict_results_valid.txt \
-     --input-file ../datasets/jcommonsenseqa-v1.1/valid-v1.1.json \
+     --input-file ../datasets/jcommonsenseqa-v1.2/valid-v1.2.json \
      --task-type swag \
      --additional-column-name-string q_id > $OUTPUT_DIR/predict_eval_results.tsv
 ```
