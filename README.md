@@ -17,7 +17,7 @@ multiple datasets. Each dataset can be found under the `datasets` directory. We 
 ||JCoLA&dagger;|6,919(in-domain)|865(in-domain),<br>685 (out-of-domain)|865 (in-domain),<br>686 (out-of-domain)|
 |Sentence Pair Classification|JSTS|12,451|1,457|1,589|
 ||JNLI|20,073|2,434|2,508|
-|QA|JSQuAD|62,859|4,442|4,420|
+|QA|JSQuAD|62,697|4,442|4,420|
 ||JCommonsenseQA|8,939|1,119|1,118|
 
 &dagger;The JCoLA dataset (Someya+, 2014) is available at https://github.com/osekilab/JCoLA.
@@ -48,12 +48,12 @@ $ cd preprocess/marc-ja/scripts
 $ gzip -dc /somewhere/amazon_reviews_multilingual_JP_v1_00.tsv.gz | \
   python marc-ja.py \
          --positive-negative \
-         --output-dir ../../../datasets/marc_ja-v1.2 \
+         --output-dir ../../../datasets/marc_ja-v1.3 \
          --max-char-length 500 \
          --filter-review-id-list-valid ../data/filter_review_id_list/valid.txt \
          --label-conv-review-id-list-valid ../data/label_conv_review_id_list/valid.txt
 ```
-~~The train and valid sets will be generated under the `datasets/marc_ja-v1.2` directory.~~
+~~The train and valid sets will be generated under the `datasets/marc_ja-v1.3` directory.~~
 
 
 ~~When you use this dataset, please follow the license of [Multilingual Amazon Reviews Corpus (MARC)](https://docs.opendata.aws/amazon-reviews-ml/readme.html).~~
