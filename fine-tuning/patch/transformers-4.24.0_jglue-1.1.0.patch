@@ -1,0 +1,320 @@
+diff --git a/examples/legacy/question-answering/run_squad.py b/examples/legacy/question-answering/run_squad.py
+index 674e7a9ac..26a398aae 100644
+--- a/examples/legacy/question-answering/run_squad.py
++++ b/examples/legacy/question-answering/run_squad.py
+@@ -22,6 +22,9 @@ import logging
+ import os
+ import random
+ import timeit
++import json
++import math
++
+ 
+ import numpy as np
+ import torch
+@@ -98,6 +101,10 @@ def train(args, train_dataset, model, tokenizer):
+         {"params": [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], "weight_decay": 0.0},
+     ]
+     optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon)
++    if args.warmup_ratio > 0:
++        args.warmup_steps = math.ceil(t_total * args.warmup_ratio)
++        logger.info("Warmup steps = %d", args.warmup_steps)
++
+     scheduler = get_linear_schedule_with_warmup(
+         optimizer, num_warmup_steps=args.warmup_steps, num_training_steps=t_total
+     )
+@@ -604,6 +611,7 @@ def main():
+         help="If > 0: set total number of training steps to perform. Override num_train_epochs.",
+     )
+     parser.add_argument("--warmup_steps", default=0, type=int, help="Linear warmup over warmup_steps.")
++    parser.add_argument("--warmup_ratio", default=0.0, type=float, help="Linear warmup ratio.")
+     parser.add_argument(
+         "--n_best_size",
+         default=20,
+@@ -637,6 +645,13 @@ def main():
+         ),
+     )
+ 
++    parser.add_argument(
++        "--evaluate_prefix",
++        default=None,
++        type=str,
++        help="evaluate prefix",
++    )
++
+     parser.add_argument("--logging_steps", type=int, default=500, help="Log every X updates steps.")
+     parser.add_argument("--save_steps", type=int, default=500, help="Save checkpoint every X updates steps.")
+     parser.add_argument(
+@@ -829,12 +844,15 @@ def main():
+             model.to(args.device)
+ 
+             # Evaluate
+-            result = evaluate(args, model, tokenizer, prefix=global_step)
++            result = evaluate(args, model, tokenizer, prefix=args.evaluate_prefix if args.evaluate_prefix is not None else global_step)
+ 
+             result = dict((k + ("_{}".format(global_step) if global_step else ""), v) for k, v in result.items())
+             results.update(result)
+ 
+     logger.info("Results: {}".format(results))
++    eval_json_file = os.path.join(args.output_dir, "{}_results.json".format(args.evaluate_prefix))
++    with open(eval_json_file, "w") as writer:
++        writer.write(json.dumps(results, indent=4) + "\n")
+ 
+     return results
+ 
+diff --git a/examples/legacy/question-answering/run_squad_trainer.py b/examples/legacy/question-answering/run_squad_trainer.py
+index 314b140e8..ce5354092 100644
+--- a/examples/legacy/question-answering/run_squad_trainer.py
++++ b/examples/legacy/question-answering/run_squad_trainer.py
+@@ -173,7 +173,7 @@ def main():
+         trainer.save_model()
+         # For convenience, we also re-save the tokenizer to the same directory,
+         # so that you can share your model easily on huggingface.co/models =)
+-        if trainer.is_world_master():
++        if trainer.is_world_process_zero():
+             tokenizer.save_pretrained(training_args.output_dir)
+ 
+ 
+diff --git a/examples/pytorch/multiple-choice/run_swag.py b/examples/pytorch/multiple-choice/run_swag.py
+index 1651f917d..cd2eb2515 100755
+--- a/examples/pytorch/multiple-choice/run_swag.py
++++ b/examples/pytorch/multiple-choice/run_swag.py
+@@ -101,6 +101,10 @@ class DataTrainingArguments:
+         default=None,
+         metadata={"help": "An optional input evaluation data file to evaluate the perplexity on (a text file)."},
+     )
++    test_file: Optional[str] = field(
++        default=None,
++        metadata={"help": "An optional input prediction data file."},
++    )
+     overwrite_cache: bool = field(
+         default=False, metadata={"help": "Overwrite the cached training and evaluation sets"}
+     )
+@@ -282,6 +286,8 @@ def main():
+             data_files["train"] = data_args.train_file
+         if data_args.validation_file is not None:
+             data_files["validation"] = data_args.validation_file
++        if data_args.test_file is not None:
++            data_files["test"] = data_args.test_file
+         extension = data_args.train_file.split(".")[-1]
+         raw_datasets = load_dataset(
+             extension,
+@@ -328,9 +334,8 @@ def main():
+     )
+ 
+     # When using your own dataset or a different dataset from swag, you will probably need to change this.
+-    ending_names = [f"ending{i}" for i in range(4)]
+-    context_name = "sent1"
+-    question_header_name = "sent2"
++    ending_names = [f"choice{i}" for i in range(5)]
++    context_name = "question"
+ 
+     if data_args.max_seq_length is None:
+         max_seq_length = tokenizer.model_max_length
+@@ -350,10 +355,9 @@ def main():
+ 
+     # Preprocessing the datasets.
+     def preprocess_function(examples):
+-        first_sentences = [[context] * 4 for context in examples[context_name]]
+-        question_headers = examples[question_header_name]
++        first_sentences = [[context] * 5 for context in examples[context_name]]
+         second_sentences = [
+-            [f"{header} {examples[end][i]}" for end in ending_names] for i, header in enumerate(question_headers)
++            [f"{examples[end][i]}" for end in ending_names] for i in range(len(examples[context_name]))
+         ]
+ 
+         # Flatten out
+@@ -369,7 +373,7 @@ def main():
+             padding="max_length" if data_args.pad_to_max_length else False,
+         )
+         # Un-flatten
+-        return {k: [v[i : i + 4] for i in range(0, len(v), 4)] for k, v in tokenized_examples.items()}
++        return {k: [v[i : i + 5] for i in range(0, len(v), 5)] for k, v in tokenized_examples.items()}
+ 
+     if training_args.do_train:
+         if "train" not in raw_datasets:
+@@ -401,6 +405,18 @@ def main():
+                 load_from_cache_file=not data_args.overwrite_cache,
+             )
+ 
++    if training_args.do_predict:
++        if "test" not in raw_datasets:
++            raise ValueError("--do_predict requires a test dataset")
++        predict_dataset = raw_datasets["test"]
++        with training_args.main_process_first(desc="test dataset map pre-processing"):
++            predict_dataset = predict_dataset.map(
++                preprocess_function,
++                batched=True,
++                num_proc=data_args.preprocessing_num_workers,
++                load_from_cache_file=not data_args.overwrite_cache,
++            )
++            
+     # Data collator
+     data_collator = (
+         default_data_collator
+@@ -465,6 +481,21 @@ def main():
+         language="en",
+     )
+ 
++    if training_args.do_predict:
++        logger.info("*** Predict ***")
++
++        predictions = trainer.predict(predict_dataset)
++        prediction_list = np.argmax(predictions.predictions, axis=1)
++        output_predict_file = os.path.join(training_args.output_dir, f"predict_results_valid.txt")
++        
++        if trainer.is_world_process_zero():
++            with open(output_predict_file, "w") as writer:
++                logger.info(f"***** Predict results *****")
++                writer.write("index\tprediction\n")
++                                    
++                for i, prediction in enumerate(prediction_list):
++                    writer.write(f"{i}\t{prediction}\n")
++        
+     if training_args.push_to_hub:
+         trainer.push_to_hub(**kwargs)
+     else:
+diff --git a/examples/pytorch/text-classification/run_glue.py b/examples/pytorch/text-classification/run_glue.py
+index 59640d32b..315d3cbb3 100755
+--- a/examples/pytorch/text-classification/run_glue.py
++++ b/examples/pytorch/text-classification/run_glue.py
+@@ -81,6 +81,10 @@ class DataTrainingArguments:
+         default=None,
+         metadata={"help": "The name of the task to train on: " + ", ".join(task_to_keys.keys())},
+     )
++    metric_name: Optional[str] = field(
++        default=None,
++        metadata={"help": "The name of the metric for evaluation as a GLUE task name: " + ", ".join(task_to_keys.keys())},
++    )
+     dataset_name: Optional[str] = field(
+         default=None, metadata={"help": "The name of the dataset to use (via the datasets library)."}
+     )
+@@ -379,6 +383,8 @@ def main():
+     # Preprocessing the raw_datasets
+     if data_args.task_name is not None:
+         sentence1_key, sentence2_key = task_to_keys[data_args.task_name]
++    elif data_args.metric_name is not None:
++        sentence1_key, sentence2_key = task_to_keys[data_args.metric_name]
+     else:
+         # Again, we try to have some nice defaults but don't hesitate to tweak to your use case.
+         non_label_column_names = [name for name in raw_datasets["train"].column_names if name != "label"]
+@@ -482,6 +488,8 @@ def main():
+     # Get the metric function
+     if data_args.task_name is not None:
+         metric = evaluate.load("glue", data_args.task_name)
++    elif data_args.metric_name is not None:
++        metric = evaluate.load("glue", data_args.metric_name)
+     else:
+         metric = evaluate.load("accuracy")
+ 
+@@ -490,7 +498,7 @@ def main():
+     def compute_metrics(p: EvalPrediction):
+         preds = p.predictions[0] if isinstance(p.predictions, tuple) else p.predictions
+         preds = np.squeeze(preds) if is_regression else np.argmax(preds, axis=1)
+-        if data_args.task_name is not None:
++        if data_args.task_name is not None or data_args.metric_name is not None:
+             result = metric.compute(predictions=preds, references=p.label_ids)
+             if len(result) > 1:
+                 result["combined_score"] = np.mean(list(result.values())).item()
+@@ -576,7 +584,9 @@ def main():
+         logger.info("*** Predict ***")
+ 
+         # Loop to handle MNLI double evaluation (matched, mis-matched)
+-        tasks = [data_args.task_name]
++        # tasks = [data_args.task_name]
++        tasks = [data_args.metric_name]
++
+         predict_datasets = [predict_dataset]
+         if data_args.task_name == "mnli":
+             tasks.append("mnli-mm")
+diff --git a/src/transformers/data/metrics/squad_metrics.py b/src/transformers/data/metrics/squad_metrics.py
+index 8a97d6d6e..acdd00f1d 100644
+--- a/src/transformers/data/metrics/squad_metrics.py
++++ b/src/transformers/data/metrics/squad_metrics.py
+@@ -38,15 +38,20 @@ def normalize_answer(s):
+     """Lower text and remove punctuation, articles and extra whitespace."""
+ 
+     def remove_articles(text):
+-        regex = re.compile(r"\b(a|an|the)\b", re.UNICODE)
+-        return re.sub(regex, " ", text)
++        return text.rstrip("。")
++    
++        # regex = re.compile(r"\b(a|an|the)\b", re.UNICODE)
++        # return re.sub(regex, " ", text)
+ 
+     def white_space_fix(text):
+         return " ".join(text.split())
+ 
+     def remove_punc(text):
+-        exclude = set(string.punctuation)
+-        return "".join(ch for ch in text if ch not in exclude)
++        # do nothing
++        return text
++
++        # exclude = set(string.punctuation)
++        # return "".join(ch for ch in text if ch not in exclude)
+ 
+     def lower(text):
+         return text.lower()
+@@ -65,8 +70,10 @@ def compute_exact(a_gold, a_pred):
+ 
+ 
+ def compute_f1(a_gold, a_pred):
+-    gold_toks = get_tokens(a_gold)
+-    pred_toks = get_tokens(a_pred)
++    # character-base
++    gold_toks = list(normalize_answer(a_gold))
++    pred_toks = list(normalize_answer(a_pred))
++    
+     common = collections.Counter(gold_toks) & collections.Counter(pred_toks)
+     num_same = sum(common.values())
+     if len(gold_toks) == 0 or len(pred_toks) == 0:
+@@ -252,7 +259,7 @@ def squad_evaluate(examples, preds, no_answer_probs=None, no_answer_probability_
+     return evaluation
+ 
+ 
+-def get_final_text(pred_text, orig_text, do_lower_case, verbose_logging=False):
++def get_final_text(pred_text, orig_text, do_lower_case, tokenizer, verbose_logging=False):
+     """Project the tokenized prediction back to the original text."""
+ 
+     # When we created the data, we kept track of the alignment between original
+@@ -295,7 +302,7 @@ def get_final_text(pred_text, orig_text, do_lower_case, verbose_logging=False):
+     # and `pred_text`, and check if they are the same length. If they are
+     # NOT the same length, the heuristic has failed. If they are the same
+     # length, we assume the characters are one-to-one aligned.
+-    tokenizer = BasicTokenizer(do_lower_case=do_lower_case)
++    # tokenizer = BasicTokenizer(do_lower_case=do_lower_case)
+ 
+     tok_text = " ".join(tokenizer.tokenize(orig_text))
+ 
+@@ -511,7 +518,15 @@ def compute_predictions_logits(
+                 tok_text = " ".join(tok_text.split())
+                 orig_text = " ".join(orig_tokens)
+ 
+-                final_text = get_final_text(tok_text, orig_text, do_lower_case, verbose_logging)
++                # final_text = get_final_text(tok_text, orig_text, do_lower_case, verbose_logging)
++                # When you use BertJapaneseTokenizer, the input text is not tokenized.
++                # So, we cannot use the get_final_text function
++                if tokenizer.__class__.__name__ == "BertJapaneseTokenizer":
++                    final_text = "".join(tok_text.split(" "))
++                else:
++                    final_text = get_final_text(tok_text, orig_text, do_lower_case, tokenizer, verbose_logging)
++                    # final_text = " ".join(tok_text.split(" "))
++                
+                 if final_text in seen_predictions:
+                     continue
+ 
+diff --git a/src/transformers/data/processors/squad.py b/src/transformers/data/processors/squad.py
+index 64137c95a..e20b9e80a 100644
+--- a/src/transformers/data/processors/squad.py
++++ b/src/transformers/data/processors/squad.py
+@@ -112,7 +112,8 @@ def squad_convert_example_to_features(
+ 
+         # If the answer cannot be found in the text, then skip this example.
+         actual_text = " ".join(example.doc_tokens[start_position : (end_position + 1)])
+-        cleaned_answer_text = " ".join(whitespace_tokenize(example.answer_text))
++        # cleaned_answer_text = " ".join(whitespace_tokenize(example.answer_text))
++        cleaned_answer_text = example.answer_text
+         if actual_text.find(cleaned_answer_text) == -1:
+             logger.warning(f"Could not find answer: '{actual_text}' vs. '{cleaned_answer_text}'")
+             return []
